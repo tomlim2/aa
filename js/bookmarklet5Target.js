@@ -33,13 +33,32 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
 
 
-        $(document).mousemove(function(){
+        $(document).click(function(){
             var p=document.getElementsByTagName('*');
             for(i=0;i<p.length;i++){
                 if(p[i].style.transform:rotate("")){
                     var s=parseInt(p[i].style.transform:rotate("").replace("deg",""));
                 } else {
                     var s=12;}s+=2;p[i].style.transform:rotate("") = s+"deg"}
+
+        });
+
+        $(document).mousemove(function(){
+          $('body').css('transform', 'rotateX(0deg) rotateY(0deg)');
+
+            var rotate_X;
+            var rotate_Y;
+            var invert = false;
+
+            if (invert) {
+              rotate_X = e.pageX;
+              rotate_Y = e.pageY;
+            } else if (!invert) {
+              rotate_X = e.pageX;
+              rotate_Y = -e.pageY;
+            }
+
+            $('body').css('transform', 'rotateX(' + rotate_Y + 'deg) rotateY(' + rotate_X + 'deg)')
 
         });
 
