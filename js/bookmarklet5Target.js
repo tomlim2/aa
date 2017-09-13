@@ -32,16 +32,25 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
+
         $("p").click('click touchstart', function() {
-            $(this).animate({ MozTransform: 'rotate(-' + -amount + 'deg)',
-                transform: 'rotate(' + -amount + 'deg)'
+            $(this).animate({ MozTransform: 'rotate(-' + -90 + 'deg)',
+                transform: 'rotate(' + -90 + 'deg)'
             }, 300);
 
         });
 
 
+        // $("p").click('click touchstart', function() {
+        //     $(this).animate({ MozTransform: 'rotate(-' + -amount + 'deg)',
+        //         transform: 'rotate(' + -amount + 'deg)'
+        //     }, 300);
         //
-        // $(document).click(function(){
+        // });
+
+        //
+        //
+        // $(document).mousemove(function(){
         //     var p=document.getElementsByTagName('*');
         //     for(i=0;i<p.length;i++){
         //         if(p[i].style.ratation){
