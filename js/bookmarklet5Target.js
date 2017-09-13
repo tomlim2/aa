@@ -32,16 +32,24 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
-
-        $(document).click(function(){
-            var p=document.getElementsByTagName('*');
-            for(i=0;i<p.length;i++){
-                if(p[i].style.transform:rotate()){
-                    var s=parseInt(p[i].style.transform:rotate().replace("deg",""));
-                } else {
-                    var s=12;}s+=2;p[i].style.transform:rotate() = s+"deg"}
+        $(document).click('click touchstart', function() {
+            $(this).animate({ MozTransform: 'rotate(-' + -amount + 'deg)',
+                transform: 'rotate(' + -amount + 'deg)'
+            }, 300);
 
         });
+
+
+        //
+        // $(document).click(function(){
+        //     var p=document.getElementsByTagName('*');
+        //     for(i=0;i<p.length;i++){
+        //         if(p[i].style.ratation){
+        //             var s=parseInt(p[i].style.rotation.replace("deg",""));
+        //         } else {
+        //             var s=0;}s+=10;p[i].style.ratation = s+"deg"}
+        //
+        // });
 
 
 
