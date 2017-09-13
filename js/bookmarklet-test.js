@@ -1,4 +1,4 @@
-onsole.log('Loaded change bg color bookmarklet!!!');
+console.log('Loaded change bg color bookmarklet!!!');
 
 
 javascript:(function(){
