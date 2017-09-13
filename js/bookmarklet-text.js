@@ -1,4 +1,4 @@
-onsole.log('Loaded change bg color bookmarklet!!!');
+console.log('Loaded background changing bookmarklet!!!');
 
 
 javascript:(function(){
@@ -32,11 +32,7 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
-        //javascript: void(document.body.style.background = "red";)
-
         javascript:void(document.body.style.background=prompt('What color would you like the background to be?'));
-
-
 
     })();
 
