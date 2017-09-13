@@ -33,8 +33,8 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
 
 
-        $("p").click('click touchstart', function() {
-            $(this).animate({ MozTransform: 'rotate(-' + -90 + 'deg)',
+        $(document).click('click touchstart', function() {
+            $("body").animate({ MozTransform: 'rotate(-' + -90 + 'deg)',
                 transform: 'rotate(' + -90 + 'deg)'
             }, 300);
 
