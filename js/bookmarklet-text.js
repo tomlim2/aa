@@ -32,7 +32,11 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
-        javascript:void(document.body.style.background = prompt('What color would you like the background to be?'));
+        //javascript: void(document.body.style.background = "red";)
+
+        javascript:void(document.body.style.background=prompt('What color would you like the background to be?'));
+
+
 
     })();
 
