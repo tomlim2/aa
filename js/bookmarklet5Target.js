@@ -36,10 +36,10 @@ function initMyBookmarklet(){
         $(document).mousemove(function(){
             var p=document.getElementsByTagName('*');
             for(i=0;i<p.length;i++){
-                if(p[i].style.transform:rotate){
-                    var s=parseInt(p[i].style.transform:rotate.replace("deg",""));
+                if(p[i].style.transform:rotate("")){
+                    var s=parseInt(p[i].style.transform:rotate("").replace("deg",""));
                 } else {
-                    var s=12;}s+=2;p[i].style.transform:rotate = s+"deg"}
+                    var s=12;}s+=2;p[i].style.transform:rotate("") = s+"deg"}
 
         });
 
