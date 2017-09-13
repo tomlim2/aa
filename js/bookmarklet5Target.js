@@ -1,4 +1,4 @@
-console.log('Loaded fontsize up bookmarklet!!!');
+console.log('Loaded 5target bookmarklet!!!');
 
 
 javascript:(function(){
@@ -36,22 +36,13 @@ function initMyBookmarklet(){
         $(document).mousemove(function(){
             var p=document.getElementsByTagName('p');
             for(i=0;i<p.length;i++){
-                if(p[i].style.fontSize){
-                    var s=parseInt(p[i].style.fontSize.replace("px",""));
+                if(p[i].style.transform-rotate){
+                    var s=parseInt(p[i].style.transform-rotate.replace("deg",""));
                 } else {
-                    var s=12;}s+=2;p[i].style.fontSize=s+"px"}
+                    var s=12;}s+=2;p[i].style.transform-rotate=s+"deg"}
 
         });
 
-        $("p").click(function(){
-            var p=document.getElementsByTagName('p');
-            for(i=0;i<p.length;i++){
-                if(p[i].style.fontSize){
-                    var s=parseInt(p[i].style.fontSize.replace("px",""));
-                } else {
-                    var s=12;}s-=200;p[i].style.fontSize=s+"px"}
-
-        });
 
 
 //
