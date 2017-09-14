@@ -33,11 +33,15 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
 
 
+
+
+
         $(document).click(function() {
             $("body").css({
               "background":"red",
               "transform":"rotate(10deg)",
-              "color":"red"
+              "color":"red",
+              "filter":"blur(2px)"
 
           });
 
@@ -46,10 +50,39 @@ function initMyBookmarklet(){
               "left":"150px"
             });
 
-            $('.main').mousemove(function(){
+
+
+
+
+            $('body').click(function(){
               $('.main').animate({
-                left: '+=10'
-              },20);
+                fontSize: '-=20',
+                top: '-=30',
+                left: '-=10'
+              },1);
+
+            });
+            $('body').mousemove(function(){
+              $('.main').animate({
+                fontSize: '+=1',
+                top: '+=2',
+                left: '+=2'
+              },1);
+            });
+
+            $('.main').mouseenter(function(){
+              $("body").css({
+                "filter":"blur(0px)",
+                "filter":"hue-rotate(180deg)"
+              });
+            });
+
+
+            $('.main').mouseleave(function(){
+              $("body").css({
+                "filter":"blur(3px)",
+                "filter":"hue-rotate(120deg)"
+              });
             });
 
         });
