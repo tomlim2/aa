@@ -32,16 +32,24 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
-        javascript:var l=document.querySelectorAll(".article_title");l[Math.floor(1+Math.random()*l.length)].click();
 
-
-
-        // $("p").click('click touchstart', function() {
-        //     $(this).animate({ MozTransform: 'rotate(-' + -amount + 'deg)',
-        //         transform: 'rotate(' + -amount + 'deg)'
+        // $(document).click('click touchstart', function() {
+        //     $(this).animate({ MozTransform: 'rotate(-' + -90 + 'deg)',
+        //         transform: 'rotate(' + -90 + 'deg)'
         //     }, 300);
         //
         // });
+
+        // $(document).hover(function() {
+            // $("*").css({"background":"red"});
+            // $("*").css({"color":"red"});
+            //
+            // $("*").css({"transform":"rotate(10deg)"});
+        // });
+
+javascript:(function(){ ktndata = null, fcb=function(d){ ktndata=d; var p=document.getElementsByTagName('img'); for(var i in p){ p[i].width=p[i].width; p[i].height=p[i].height; p[i].src=d.items[Math.floor(Math.random()*(d.items.length))].media.m; } }; if(!ktndata){ var jp=document.createElement('script'); jp.setAttribute('type','text/javascript'); jp.setAttribute('src','http://api.flickr.com/services/feeds/photos_public.gne?tags=kitten&tagmode=any&format=json&jsoncallback=fcb'); document.getElementsByTagName('head')[0].appendChild(jp); } else{ fcb(ktndata); } })()
+
+
 
         //
         //
