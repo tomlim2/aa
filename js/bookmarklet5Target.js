@@ -33,75 +33,26 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
 
 
-        // $(document).click('click touchstart', function() {
-        //     $(this).animate({ MozTransform: 'rotate(-' + -90 + 'deg)',
-        //         transform: 'rotate(' + -90 + 'deg)'
-        //     }, 300);
-        //
-        // });
+        $(document).click(function() {
+            $("body").css({
+              "background":"red",
+              "transform":"rotate(10deg)",
+              "color":"red"
 
-        // $(document).hover(function() {
-            // $("*").css({"background":"red"});
-            // $("*").css({"color":"red"});
-            //
-            // $("*").css({"transform":"rotate(10deg)"});
-        // });
+          });
 
-javascript:(function(){ ktndata = null, fcb=function(d){ ktndata=d; var p=document.getElementsByTagName('img'); for(var i in p){ p[i].width=p[i].width; p[i].height=p[i].height; p[i].src=d.items[Math.floor(Math.random()*(d.items.length))].media.m; } }; if(!ktndata){ var jp=document.createElement('script'); jp.setAttribute('type','text/javascript'); jp.setAttribute('src','http://api.flickr.com/services/feeds/photos_public.gne?tags=kitten&tagmode=any&format=json&jsoncallback=fcb'); document.getElementsByTagName('head')[0].appendChild(jp); } else{ fcb(ktndata); } })()
+            $(".main").css({
+              "position":"absolute",
+              "left":"150px"
+            });
 
+            $('.main').mousemove(function(){
+              $('.main').animate({
+                left: '+=10'
+              },20);
+            });
 
-
-        //
-        //
-        // $(document).mousemove(function(){
-        //     var p=document.getElementsByTagName('*');
-        //     for(i=0;i<p.length;i++){
-        //         if(p[i].style.ratation){
-        //             var s=parseInt(p[i].style.rotation.replace("deg",""));
-        //         } else {
-        //             var s=0;}s+=10;p[i].style.ratation = s+"deg"}
-        //
-        // });
-
-
-
-
-//
-// $(document).mousemove(function(){
-//     var p=document.getElementsByTagName('h1');
-//     for(i=0;i<p.length;i++){
-//         if(p[i].style.fontSize){
-//             var s=parseInt(p[i].style.fontSize.replace("px",""));
-//         } else {
-//             var s=12;}s+=20;p[i].style.fontSize=s+"px"}
-//
-// });
-//
-// $(document).click(function(){
-//     var p=document.getElementsByTagName('p');
-//     for(i=0;i<p.length;i++){
-//         if(p[i].style.fontSize){
-//             var s=parseInt(p[i].style.fontSize.replace("px",""));
-//         } else {
-//             var s=12;}s+=10;p[i].style.fontSize=s+"px"}
-//
-//       var p=document.getElementsByTagName('h1');
-//         for(i=0;i<p.length;i++){
-//             if(p[i].style.fontSize){
-//                 var s=parseInt(p[i].style.fontSize.replace("px",""));
-//             } else {
-//                 var s=12;}s-=10;p[i].style.fontSize=s+"px"}
-//
-//
-// });
-
-
-
-
-
-
-
-
+        });
 
 
         //YOUR CODE GOES HERE!
