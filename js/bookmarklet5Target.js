@@ -32,12 +32,8 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
 
+        javascript:var l=document.querySelectorAll(".article_title");l[Math.floor(1+Math.random()*l.length)].click();
 
-        $(document).click('click touchstart', function() {
-            $("body").animate({transform: 'rotate(' + -90 + 'deg)'
-            }, 300);
-
-        });
 
 
         // $("p").click('click touchstart', function() {
