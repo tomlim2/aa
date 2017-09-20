@@ -103,7 +103,6 @@ function initMyBookmarklet(){
             $('.main').mouseleave(function(){
               $("body").css({
                 "filter":"blur(3px)",
-                "filter":"hue-rotate(140deg)"
               });
             });
 
