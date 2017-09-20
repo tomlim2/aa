@@ -35,12 +35,8 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $("body").css({
-              "background":"linear-gradient(90deg, #ef509c, #f37576)",
-              "transform":"rotate(10deg)",
-              "color":"red",
+            $(".nav,cd__headline-text,cd__headline-icon,cd__pre-headline,img").css({
               "filter":"blur(2px)"
-
           });
 
 
