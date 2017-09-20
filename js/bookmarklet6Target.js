@@ -39,14 +39,14 @@ function initMyBookmarklet(){
               "filter":"blur(3px)"
           });
 
-            $('h2').mouseenter(function(){
+            $('img').mouseenter(function(){
               $(this).css({
                 "filter":"blur(0px)"
               });
             });
 
 
-            $('h2').mouseleave(function(){
+            $('img').mouseleave(function(){
               $(this).css({
                 "filter":"blur(3px)",
               });
