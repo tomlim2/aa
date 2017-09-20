@@ -35,71 +35,20 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $(".nav,cd__headline-text,cd__headline-icon,cd__pre-headline,img").css({
-              "filter":"blur(2px)"
+            $("h2,.nav,cd__headline-text,cd__headline-icon,cd__pre-headline,img").css({
+              "filter":"blur(3px)"
           });
 
-
-            $(".main").css({
-              "position":"absolute",
-              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "left":"150px",
-              "color":"white"
-            });
-
-            $("#exercises").css({
-              "position":"absolute",
-              "left":"0px"
-            });
-
-
-
-
-            var start1 = 0;
-            $(window).scroll(function(){
-                var scrollPX = $(this).scrollTop();
-                if( scrollPX > start1 ) {
-                    $("#exercises").css({
-                      "left": Math.min(scrollPX*4, 380) + "px"
-                    });
-                }else{
-                    $("#exercises").css({
-                      "left": 0 + "px"
-                    });
-                }
-            });
-
-            $('body').click(function(){
-              $('.main').animate({
-                rotate:'+=10',
-                fontSize: '-=20',
-                top: '-=30',
-                left: '-=10'
-              },1);
-              $("h3").css({
-                "background":"yellow"
-              });
-            });
-            $('body').mousemove(function(){
-              $('.main').animate({
-                fontSize: '+=1',
-                top: '+=2',
-                left: '+=2'
-              },1);
-            });
-
-            $('.main').mouseenter(function(){
-              $("body").css({
-                "filter":"blur(0px)",
-                "filter":"hue-rotate(170deg)"
+            $('h2').mouseenter(function(){
+              $(this).css({
+                "filter":"blur(0px)"
               });
             });
 
 
-            $('.main').mouseleave(function(){
-              $("body").css({
+            $('h2').mouseleave(function(){
+              $(this).css({
                 "filter":"blur(3px)",
-                "filter":"hue-rotate(140deg)"
               });
             });
 
