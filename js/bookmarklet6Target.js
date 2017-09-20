@@ -35,18 +35,18 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $("h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking").css({
+            $("h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking,.zn__column--idx-1").css({
               "filter":"blur(3px)"
           });
 
-            $('h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking').mouseenter(function(){
+            $('h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking,.zn__column--idx-1').mouseenter(function(){
               $(this).css({
                 "filter":"blur(0px)"
               });
             });
 
 
-            $('h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking').mouseleave(function(){
+            $('h2,img,.nav,.banner-text--natural,.cd__headline-text,.cd__headline-icon,.cd__pre-headline,.cd__content,.cd__status--breaking,.zn__column--idx-1').mouseleave(function(){
               $(this).css({
                 "filter":"blur(3px)",
               });
