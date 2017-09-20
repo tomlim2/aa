@@ -35,18 +35,18 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $("h2,.nav,cd__headline-text,cd__headline-icon,cd__pre-headline,img").css({
+            $("h2,.banner-text--natural,.nav,cd__headline-text,cd__headline-icon,cd__pre-headline,img").css({
               "filter":"blur(3px)"
           });
 
-            $('img').mouseenter(function(){
+            $('img,.nav,.banner-text--natural').mouseenter(function(){
               $(this).css({
                 "filter":"blur(0px)"
               });
             });
 
 
-            $('img').mouseleave(function(){
+            $('img,.nav,.banner-text--natural').mouseleave(function(){
               $(this).css({
                 "filter":"blur(3px)",
               });
