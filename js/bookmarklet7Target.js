@@ -57,7 +57,7 @@ function initMyBookmarklet(){
             });
 
             $(".header__nav").css({
-              "background-color": "hsla(0,0%,100%,.0)"
+              "background-color": "hsla(0,0%,100%,.0)",
 
             });
 
