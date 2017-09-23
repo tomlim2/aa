@@ -57,7 +57,6 @@ function initMyBookmarklet(){
             });
 
             $(".header__nav").css({
-              "transform":"rotate(10deg)",
               "background-color": "hsla(0,0%,100%,.0)"
 
             });
