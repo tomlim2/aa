@@ -35,20 +35,19 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $("body").css({
+            $(".header__nav__upper").css({
               "background":"linear-gradient(90deg, #ef509c, #f37576)",
               "transform":"rotate(10deg)",
-              "color":"red",
-              "filter":"blur(2px)"
+              "color":"red"
 
           });
 
 
-            $(".main").css({
-              "position":"absolute",
+            $(".header__nav__lower").css({
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "left":"150px",
+              "transform":"rotate(-10deg)",
               "color":"white"
+              
             });
 
             $("#exercises").css({
@@ -64,12 +63,10 @@ function initMyBookmarklet(){
                 var scrollPX = $(this).scrollTop();
                 if( scrollPX > start1 ) {
                     $("#exercises").css({
-                      "transform": "rotate("+ Math.min(scrollPX, 720) + "deg)",
                       "left": Math.min(scrollPX*4, 380) + "px"
                     });
                 }else{
                     $("#exercises").css({
-                      "transform": "rotate(0deg)",
                       "left": 0 + "px"
                     });
                 }
