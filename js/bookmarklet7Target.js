@@ -47,12 +47,19 @@ function initMyBookmarklet(){
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
               "transform":"rotate(-10deg)",
               "color":"white"
-              
+
             });
 
-            $("#exercises").css({
-              "position":"absolute",
-              "left":"0px"
+            $(".header__nav__lower").css({
+              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
+              "transform":"rotate(-10deg)",
+              "color":"white"
+
+            });
+
+            $(".banner-tray").css({
+              "transform":"rotate(10deg)",
+
             });
 
 
