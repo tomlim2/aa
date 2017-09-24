@@ -43,14 +43,14 @@ function initMyBookmarklet(){
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 600) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/1000, 10) + ")",
-                    "background":"linear-gradient(90deg, #ef509c, #f37576)"
+                    "background":"yellow"
                   });
               }else{
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)"
                     + "translateX(0px)"
                     + "translateY(0px)",
-                    "background":"linear-gradient(90deg, #ef509c, #f37576)"
+                    "background":"yellow"
                   });
               }
           });
@@ -63,22 +63,26 @@ function initMyBookmarklet(){
             $('.header__nav__lower').css({
               "transform": "rotate("+ xAxis + "deg)"
               + "scale("+ xAxis/100 + ")",
-              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "color":"white"
+              "background":"red",
+              "color": "lightgoldenrodyellow"
             });
 
             $('.banner-tray').css({
               "transform": "rotate("+ yAxis + "deg)"
-              + "scale("+ xAxis/100 + ")"
+              + "scale("+ xAxis/100 + ")",
+              "background":"yellow"
             });
 
           });
 
 
+            $("body").css({
+              "background-color": "black",
+              "color": "lightgoldenrodyellow",
+            });
 
             $(".header__nav").css({
               "background-color": "hsla(0,0%,100%,.0)",
-
             });
 
             $('.home__carousel-stage').animate({
