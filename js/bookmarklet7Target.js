@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
                   if( scrollPX > start2 ) {
                       $(".home__locations").css({
-                        "transform": "translateY("+ Math.max(-scrollPX/1000, -600) + "px)",
+                        "transform": "translateY("+ Math.max(-scrollPX, -600) + "px)",
 
                       });
 
