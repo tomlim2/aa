@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               top: '1000'
-            },10);
+            },100);
 
 
 
@@ -72,11 +72,11 @@ function initMyBookmarklet(){
                 var scrollPX = $(this).scrollTop();
                 if( scrollPX > start1 ) {
                     $("#exercises").css({
-                      "left": Math.min(scrollPX*4, 380) + "px"
+                      "opacity": Math.min(scrollPX*0.01, 1)
                     });
                 }else{
                     $("#exercises").css({
-                      "left": 0 + "px"
+                      "opacity": 0;
                     });
                 }
             });
