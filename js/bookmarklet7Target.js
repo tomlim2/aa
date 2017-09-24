@@ -62,8 +62,8 @@ function initMyBookmarklet(){
             });
 
             $('.home__carousel-stage').animate({
-              'top': '1000px'
-            },100);
+              'top': '100px'
+            },10);
 
 
             //
