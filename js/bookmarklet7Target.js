@@ -40,6 +40,11 @@ function initMyBookmarklet(){
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
+
+                  $('body').css({
+                    "filter":"hue-rotate("+ scrollPX +"deg)"
+                  });
+
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
@@ -60,8 +65,6 @@ function initMyBookmarklet(){
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
                     + "scale("+ (1 + scrollPX/5000) + ")",
-                    "background":"yellow",
-                    "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
 
