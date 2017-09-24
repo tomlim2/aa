@@ -44,7 +44,7 @@ function initMyBookmarklet(){
                     "transform": "rotate("+ Math.max(scrollPX, 3900) + "deg)"
                     + "translateX("+ Math.max(scrollPX, 100) + "px)"
                     + "translateY("+ Math.max(scrollPX, 100) + "px)"
-                    + "scale("+ Math.max(1 + scrollPX/10000, 10) + ")",
+                    + "scale("+ Math.max(1 + scrollPX/10000, 2) + ")",
                     "background":"yellow"
                   });
 
