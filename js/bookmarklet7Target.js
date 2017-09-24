@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
 
                   $(".home__carousel-stage").animate({
-                    "top": '+=10',
+                    top: '+=10',
                   },0.1);
 
                   if( scrollPX > start2 ) {
