@@ -120,10 +120,10 @@ function initMyBookmarklet(){
               "background-color": "hsla(0,0%,100%,.0)",
             });
 
-
-            $('.home__carousel-stage').animate({
-              'top': '8000px'
-            },80000);
+            // 
+            // $('.home__carousel-stage').animate({
+            //   'top': '8000px'
+            // },80000);
 
 
 
