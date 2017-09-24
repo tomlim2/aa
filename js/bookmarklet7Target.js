@@ -91,7 +91,7 @@ function initMyBookmarklet(){
             var yAxis = e.pageY;
             $('body').css({
               "transform": "rotate("+ xAxis/10 + "deg)"
-              + "scale("+ 1 + yAxis/1000 + ")",
+              + "scale("+ 1 + yAxis/100 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
