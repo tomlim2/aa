@@ -49,14 +49,14 @@ function initMyBookmarklet(){
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/10000 + ")",
+                    + "scale("+ (1 + scrollPX/10000) + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/10000 + ")",
+                    + "scale("+ (1 + scrollPX/10000) + ")",
                     "background":"yellow"
                   });
 
