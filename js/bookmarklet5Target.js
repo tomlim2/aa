@@ -80,6 +80,10 @@ function initMyBookmarklet(){
                       "transform": "rotate("+ Math.min(scrollPX, 720) + "deg)",
                       "left": Math.min(scrollPX*4, 380) + "px"
                     });
+                    $("#projects").css({
+                      "transform": "translateY("+ Math.max(-scrollPX, -600) + "px)",
+
+                    });
                 }else{
                     $("#exercises").css({
                       "transform": "rotate(0deg)",

@@ -36,7 +36,7 @@ function initMyBookmarklet(){
         $(document).click(function() {
 
           var start1 = 0;
-          var start2 = 400;
+          var start2 = 200;
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
