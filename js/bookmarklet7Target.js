@@ -42,7 +42,7 @@ function initMyBookmarklet(){
                     "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 600) + "px)"
-                    + "scale("+ Math.min(scrollPX, 10) + ")",
+                    + "scale("+ Math.min(scrollPX/1000, 10) + ")",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
