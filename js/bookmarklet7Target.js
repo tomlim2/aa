@@ -41,13 +41,13 @@ function initMyBookmarklet(){
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 720) + "deg)",
-                    "left": Math.min(scrollPX*4, 380) + "px"
+                    "left": Math.min(scrollPX*4, 380) + "px",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)",
-                    "left": 0 + "px"
+                    "left": 0 + "px",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }
