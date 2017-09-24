@@ -49,14 +49,14 @@ function initMyBookmarklet(){
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ scrollPX/10000 + ")",
+                    + "scale("+ 1 + scrollPX/10000 + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ scrollPX/10000 + ")",
+                    + "scale("+ 1 + scrollPX/10000 + ")",
                     "background":"yellow"
                   });
 
@@ -90,8 +90,9 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('body').css({
+              "color": "lightgoldenrodyellow",
               "transform": "rotate("+ yAxis/10 + "deg)"
-              + "scale("+ xAxis/1000 + ")",
+              + "scale("+ 1 + xAxis/100000 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
@@ -100,10 +101,6 @@ function initMyBookmarklet(){
 
 
 
-            $("body").css({
-              "background-color": "black",
-              "color": "lightgoldenrodyellow",
-            });
 
             $(".header__nav").css({
               "background-color": "hsla(0,0%,100%,.0)",
