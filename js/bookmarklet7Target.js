@@ -40,7 +40,7 @@ function initMyBookmarklet(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
-                    "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
+                    "transform": "rotate("+ Math.min(scrollPX, 3000) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 600) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
@@ -49,14 +49,14 @@ function initMyBookmarklet(){
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ (1 + scrollPX/10000) + ")",
+                    + "scale("+ (1 + scrollPX/8000) + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ (1 + scrollPX/10000) + ")",
+                    + "scale("+ (1 + scrollPX/8000) + ")",
                     "background":"yellow"
                   });
 
