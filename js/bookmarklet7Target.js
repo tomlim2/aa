@@ -62,10 +62,9 @@ function initMyBookmarklet(){
                   });
 
 
-                  $(".home__carousel-stage").css({
-                    "transform": "translateY(" - scrollPX*4 + "px)",
-
-                  });
+                  $(".home__carousel-stage").animate({
+                    "top": '-=10',
+                  },1);
 
                   if( scrollPX > start2 ) {
                       $(".home__locations").css({
@@ -121,8 +120,9 @@ function initMyBookmarklet(){
               "background-color": "hsla(0,0%,100%,.0)",
             });
 
+
             $('.home__carousel-stage').animate({
-              'top': '10000px'
+              'top': '8000px'
             },80000);
 
 
