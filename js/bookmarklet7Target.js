@@ -42,7 +42,7 @@ function initMyBookmarklet(){
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
-                    + "translateY("+ Math.min(scrollPX, 200) + "px)"
+                    + "translateY("+ Math.min(scrollPX, 100) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
                     "background":"yellow"
                   });
