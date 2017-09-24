@@ -49,14 +49,14 @@ function initMyBookmarklet(){
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/10000 + ")",
+                    + "scale("+ scrollPX/10000 + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/10000 + ")",
+                    + "scale("+ scrollPX/10000 + ")",
                     "background":"yellow"
                   });
 
@@ -91,7 +91,7 @@ function initMyBookmarklet(){
             var yAxis = e.pageY;
             $('body').css({
               "transform": "rotate("+ yAxis/10 + "deg)"
-              + "scale("+ 1 + xAxis/10000 + ")",
+              + "scale("+ xAxis/1000 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
