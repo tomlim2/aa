@@ -62,7 +62,7 @@ function initMyBookmarklet(){
             });
 
             $('.home__carousel-stage').animate({
-              top: '1000px'
+              'top': '1000px'
             },1000);
 
 
