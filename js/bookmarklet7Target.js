@@ -41,8 +41,8 @@ function initMyBookmarklet(){
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
-                    + "translateX("+ Math.min(scrollPX, 1720) + "px)"
-                    + "translateY("+ Math.min(scrollPX, 1720) + "px)",
+                    + "translateX("+ Math.min(scrollPX, 100) + "px)"
+                    + "translateY("+ Math.min(scrollPX, 800) + "px)",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
@@ -77,7 +77,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               'top': '1000px'
-            },100);
+            },10000);
 
 
             //
