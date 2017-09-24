@@ -90,9 +90,7 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('body').css({
-              "color": "lightgoldenrodyellow",
-              "transform": "rotate("+ yAxis/10 + "deg)"
-              + "scale("+ 1 + xAxis/100000 + ")",
+              "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")"
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
