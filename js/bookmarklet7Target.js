@@ -72,7 +72,7 @@ function initMyBookmarklet(){
                 var scrollPX = $(this).scrollTop();
                 if( scrollPX > start1 ) {
                     $(".divided-columns__left--first-row").css({
-                      "opacity": Math.min(scrollPX/10, 1);
+                      "opacity": Math.max(scrollPX/10, 1);
                     });
                 }else{
                     $(".divided-columns__left--first-row").css({
