@@ -41,15 +41,15 @@ function initMyBookmarklet(){
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)",
-                    "transform": "translateX("+ Math.min(scrollPX, 1720) + "px)",
-                    "transform": "translateY("+ Math.min(scrollPX, 1720) + "px)",
+                    "translateX("+ Math.min(scrollPX, 1720) + "px)",
+                    "translateY("+ Math.min(scrollPX, 1720) + "px)",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)",
-                    "transform": "translateX(0px)",
-                    "transform": "translateY(0px)",
+                    "translateX(0px)",
+                    "translateY(0px)",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }
