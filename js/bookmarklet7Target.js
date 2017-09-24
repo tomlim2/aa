@@ -63,12 +63,12 @@ function initMyBookmarklet(){
 
 
                   $(".home__carousel-stage").animate({
-                    "top": '-=10',
-                  },1);
+                    "top": '+=10',
+                  },0.1);
 
                   if( scrollPX > start2 ) {
                       $(".home__locations").css({
-                        "transform": "translateY("+ Math.max(200 + -scrollPX, -600) + "px)",
+                        "transform": "translateY("+ Math.max(200 + -scrollPX*1.6, -600) + "px)",
 
                       });
 
@@ -120,7 +120,7 @@ function initMyBookmarklet(){
               "background-color": "hsla(0,0%,100%,.0)",
             });
 
-            // 
+            //
             // $('.home__carousel-stage').animate({
             //   'top': '8000px'
             // },80000);
