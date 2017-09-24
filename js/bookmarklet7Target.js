@@ -47,15 +47,15 @@ function initMyBookmarklet(){
                   });
 
                   $('.header__nav__lower').css({
-                    "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ scrollPX/100 + ")",
+                    "transform": "rotate("+ - scrollPX + "deg)"
+                    + "scale("+ 1 + scrollPX/1000 + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ scrollPX/100 + ")",
+                    + "scale("+ 1 + scrollPX/1000 + ")",
                     "background":"yellow"
                   });
 
