@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               top: '1000px'
-            },1);
+            },1000);
 
 
             //
