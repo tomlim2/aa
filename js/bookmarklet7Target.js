@@ -62,11 +62,11 @@ function initMyBookmarklet(){
             });
 
             $('.home__carousel-stage').animate({
-              top: '1000'
-            },100);
+              top: '1000px'
+            },1);
 
 
-            // 
+            //
             // var start1 = 0;
             // $(window).scroll(function(){
             //     var scrollPX = $(this).scrollTop();
