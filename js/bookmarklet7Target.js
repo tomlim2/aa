@@ -53,18 +53,20 @@ function initMyBookmarklet(){
                     "transform": "rotate("+ - scrollPX + "deg)"
                     + "scale("+ (1 + scrollPX/5000) + ")",
                     "background":"red",
-                    "color": "lightgoldenrodyellow"
+                    "color": "lightgoldenrodyellow",
+                    "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
                     + "scale("+ (1 + scrollPX/5000) + ")",
-                    "background":"yellow"
+                    "background":"yellow",
+                    "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
 
                   $(".home__carousel-stage").animate({
-                    top: '+=10',
+                    top: '+=1',
                   },0.1);
 
                   if( scrollPX > start2 ) {
