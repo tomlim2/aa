@@ -58,19 +58,20 @@ function initMyBookmarklet(){
 
           $(document).mousemove(function(e){
             var xAxis = e.pageX;
+            var yAxis = e.pageY;
             $('.header__nav__lower').css({
               "transform": "rotate("+ xAxis + "deg)",
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
               "color":"white"
             });
+
+            $('.banner-tray').css({
+              "transform": "rotate("+ yAxis + "deg)",
+            });
+
           });
 
 
-
-            $(".banner-tray").css({
-              "transform":"rotate(10deg)",
-
-            });
 
             $(".header__nav").css({
               "background-color": "hsla(0,0%,100%,.0)",
