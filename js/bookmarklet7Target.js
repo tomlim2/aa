@@ -61,6 +61,12 @@ function initMyBookmarklet(){
                     "background":"yellow"
                   });
 
+
+                  $(".home__carousel-stage").css({
+                    "transform": "translateY(" - scrollPX + "px)",
+
+                  });
+
                   if( scrollPX > start2 ) {
                       $(".home__locations").css({
                         "transform": "translateY("+ Math.max(-scrollPX, -600) + "px)",
