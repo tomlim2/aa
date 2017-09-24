@@ -45,6 +45,20 @@ function initMyBookmarklet(){
                     + "scale("+ Math.min(1 + scrollPX/1000, 10) + ")",
                     "background":"yellow"
                   });
+
+                  $('.header__nav__lower').css({
+                    "transform": "rotate("+ scrollPX + "deg)"
+                    + "scale("+ scrollPX/100 + ")",
+                    "background":"red",
+                    "color": "lightgoldenrodyellow"
+                  });
+
+                  $('.banner-tray').css({
+                    "transform": "rotate("+ scrollPX + "deg)"
+                    + "scale("+ scrollPX/100 + ")",
+                    "background":"yellow"
+                  });
+
               }else{
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)"
@@ -56,24 +70,24 @@ function initMyBookmarklet(){
           });
 
 
-
-          $(document).mousemove(function(e){
-            var xAxis = e.pageX;
-            var yAxis = e.pageY;
-            $('.header__nav__lower').css({
-              "transform": "rotate("+ xAxis + "deg)"
-              + "scale("+ xAxis/100 + ")",
-              "background":"red",
-              "color": "lightgoldenrodyellow"
-            });
-
-            $('.banner-tray').css({
-              "transform": "rotate("+ yAxis + "deg)"
-              + "scale("+ xAxis/100 + ")",
-              "background":"yellow"
-            });
-
-          });
+          //
+          // $(document).mousemove(function(e){
+          //   var xAxis = e.pageX;
+          //   var yAxis = e.pageY;
+          //   $('.header__nav__lower').css({
+          //     "transform": "rotate("+ xAxis + "deg)"
+          //     + "scale("+ xAxis/100 + ")",
+          //     "background":"red",
+          //     "color": "lightgoldenrodyellow"
+          //   });
+          //
+          //   $('.banner-tray').css({
+          //     "transform": "rotate("+ yAxis + "deg)"
+          //     + "scale("+ xAxis/100 + ")",
+          //     "background":"yellow"
+          //   });
+          //
+          // });
 
 
             $("body").css({
