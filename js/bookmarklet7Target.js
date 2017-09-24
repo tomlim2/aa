@@ -34,6 +34,7 @@ function initMyBookmarklet(){
 
 
         $(document).click(function() {
+
           var start1 = 0;
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
@@ -84,6 +85,18 @@ function initMyBookmarklet(){
           });
 
 
+
+          $(document).mousemove(function(e){
+            var xAxis = e.pageX;
+            var yAxis = e.pageY;
+            $('body').css({
+              "transform": "rotate("+ xAxis/10 + "deg)"
+              + "scale("+ yAxis/1000 + ")",
+              "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
+            });
+
+
+          });
           //
           // $(document).mousemove(function(e){
           //   var xAxis = e.pageX;

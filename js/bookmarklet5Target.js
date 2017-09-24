@@ -44,13 +44,21 @@ function initMyBookmarklet(){
           // });
 
 
+          var color = 'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")';
+
+          $(document.body).animate({
+            backgroundColor:color
+          }, 1000);
+
+
 
           $(document).mousemove(function(e){
             var xAxis = e.pageX;
+            var yAxis = e.pageY;
             $('body').css({
-              "transform": "rotate("+ xAxis + "deg)",
-              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "color":"white"
+              "transform": "rotate("+ xAxis/10 + "deg)"
+              + "scale("+ yAxis/1000 + ")",
+              "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
           });
 
