@@ -36,14 +36,15 @@ function initMyBookmarklet(){
         $(document).click(function() {
 
           var start1 = 0;
+          var start2 = 400;
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
-                    "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
-                    + "translateX("+ Math.min(scrollPX, 100) + "px)"
-                    + "translateY("+ Math.min(scrollPX, 100) + "px)"
-                    + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
+                    "transform": "rotate("+ Math.max(scrollPX, 3900) + "deg)"
+                    + "translateX("+ Math.max(scrollPX, 100) + "px)"
+                    + "translateY("+ Math.max(scrollPX, 100) + "px)"
+                    + "scale("+ Math.max(1 + scrollPX/10000, 10) + ")",
                     "background":"yellow"
                   });
 
@@ -60,7 +61,16 @@ function initMyBookmarklet(){
                     "background":"yellow"
                   });
 
-              }else{
+                  if( scrollPX > start2 ) {
+                      $(".home__locations").css({
+                        "transform": "translateY("+ - Math.max(scrollPX/10, 600) + "px)",
+
+                      });
+
+                  }
+
+              }
+              else{
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)"
                     + "translateX(0px)"
