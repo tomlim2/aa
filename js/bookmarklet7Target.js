@@ -60,7 +60,7 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('.header__nav__lower').css({
-              "transform": "rotate("+ xAxis + "deg)",
+              "transform": "rotate("+ xAxis + "deg)"
               + "scale("+ xAxis/100 + ")",
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
               "color":"white"
