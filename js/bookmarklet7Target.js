@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
 
                   $(".home__carousel-stage").css({
-                    "transform": "translateY(" - scrollPX + "px)",
+                    "transform": "translateY(" - scrollPX*4 + "px)",
 
                   });
 
@@ -123,7 +123,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               'top': '10000px'
-            },8000);
+            },800);
 
 
 
