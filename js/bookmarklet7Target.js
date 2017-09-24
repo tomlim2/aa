@@ -40,16 +40,16 @@ function initMyBookmarklet(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
                   $(".header__nav__upper").css({
-                    "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)",
-                    "translateX("+ Math.min(scrollPX, 1720) + "px)",
-                    "translateY("+ Math.min(scrollPX, 1720) + "px)",
+                    "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
+                    + "translateX("+ Math.min(scrollPX, 1720) + "px)"
+                    + "translateY("+ Math.min(scrollPX, 1720) + "px)",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
                   $(".header__nav__upper").css({
-                    "transform": "rotate(0deg)",
-                    "translateX(0px)",
-                    "translateY(0px)",
+                    "transform": "rotate(0deg)"
+                    + "translateX(0px)"
+                    + "translateY(0px)",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }
