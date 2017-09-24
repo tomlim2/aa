@@ -90,7 +90,7 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('body').css({
-              "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")"
+              "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
@@ -109,20 +109,7 @@ function initMyBookmarklet(){
             },8000);
 
 
-            //
-            // var start1 = 0;
-            // $(window).scroll(function(){
-            //     var scrollPX = $(this).scrollTop();
-            //     if( scrollPX > start1 ) {
-            //         $(".divided-columns__left--first-row").css({
-            //           "opacity": + Math.max(scrollPX*0.01, 1);
-            //         });
-            //     }else{
-            //         $(".divided-columns__left--first-row").css({
-            //           "opacity": 0;
-            //         });
-            //     }
-            // });
+
 
 
             $('body').mousemove(function(){
