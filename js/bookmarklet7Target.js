@@ -90,8 +90,8 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('body').css({
-              "transform": "rotate("+ xAxis/10 + "deg)"
-              + "scale("+ 1 + yAxis/10000 + ")",
+              "transform": "rotate("+ yAxis/10 + "deg)"
+              + "scale("+ 1 + xAxis/1000 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
