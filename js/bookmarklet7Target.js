@@ -43,20 +43,20 @@ function initMyBookmarklet(){
                     "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 600) + "px)"
-                    + "scale("+ Math.min(1 + scrollPX/1000, 10) + ")",
+                    + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
                     "background":"yellow"
                   });
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/1000 + ")",
+                    + "scale("+ 1 + scrollPX/10000 + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ 1 + scrollPX/1000 + ")",
+                    + "scale("+ 1 + scrollPX/10000 + ")",
                     "background":"yellow"
                   });
 
