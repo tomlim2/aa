@@ -68,7 +68,7 @@ function initMyBookmarklet(){
                   });
 
 
-                  $(".home__carousel-stage").animate({
+                  $(".home__carousel-stage").css({
                     "transform": "rotate("+ scrollPX/3 + "deg)",
                     "top": '+=1',
                   },0.1);
