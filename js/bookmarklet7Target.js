@@ -34,7 +34,6 @@ function initMyBookmarklet(){
 
 
         $(document).click(function() {
-
           var start1 = 0;
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
@@ -57,9 +56,11 @@ function initMyBookmarklet(){
 
 
 
+
             $(".header__nav__lower").css({
+              var xAxis = e.pageX;
+              "transform": "rotate("+ xAxis + "deg)"
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "transform":"rotate(-10deg)",
               "color":"white"
 
             });
