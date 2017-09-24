@@ -63,7 +63,7 @@ function initMyBookmarklet(){
 
                   if( scrollPX > start2 ) {
                       $(".home__locations").css({
-                        "transform": "translateY("+ Math.max(-scrollPX/4, -600) + "px)",
+                        "transform": "translateY("+ Math.max(400 + -scrollPX/4, -600) + "px)",
 
                       });
 
@@ -71,7 +71,7 @@ function initMyBookmarklet(){
 
               }
               else{
-                  
+
                   $(".header__nav__upper").css({
                     "transform": "rotate(0deg)"
                     + "translateX(0px)"
