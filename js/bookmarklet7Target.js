@@ -42,21 +42,21 @@ function initMyBookmarklet(){
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 3000) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
-                    + "translateY("+ Math.min(scrollPX, 600) + "px)"
+                    + "translateY("+ Math.min(scrollPX, 200) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
                     "background":"yellow"
                   });
 
                   $('.header__nav__lower').css({
                     "transform": "rotate("+ - scrollPX + "deg)"
-                    + "scale("+ (1 + scrollPX/8000) + ")",
+                    + "scale("+ (1 + scrollPX/5000) + ")",
                     "background":"red",
                     "color": "lightgoldenrodyellow"
                   });
 
                   $('.banner-tray').css({
                     "transform": "rotate("+ scrollPX + "deg)"
-                    + "scale("+ (1 + scrollPX/8000) + ")",
+                    + "scale("+ (1 + scrollPX/5000) + ")",
                     "background":"yellow"
                   });
 
@@ -91,7 +91,7 @@ function initMyBookmarklet(){
             var yAxis = e.pageY;
             $('body').css({
               "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
-              "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")",
+              "background-color" : "rgb(" + xAxis/10 + "," + yAxis/1000 + "," + (xAxis*yAxis) /10 + ")",
             });
 
 
