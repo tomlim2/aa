@@ -124,6 +124,25 @@ function initMyBookmarklet(){
         });
 
 
+        //
+        // $(document).mousemove(function(e){
+        //   var xAxis = e.pageX;
+        //   var yAxis = e.pageY;
+        //   $('.header__nav__lower').css({
+        //     "transform": "rotate("+ xAxis + "deg)"
+        //     + "scale("+ xAxis/100 + ")",
+        //     "background":"red",
+        //     "color": "lightgoldenrodyellow"
+        //   });
+        //
+        //   $('.banner-tray').css({
+        //     "transform": "rotate("+ yAxis + "deg)"
+        //     + "scale("+ xAxis/100 + ")",
+        //     "background":"yellow"
+        //   });
+        //
+        // });
+
         //YOUR CODE GOES HERE!
 
 

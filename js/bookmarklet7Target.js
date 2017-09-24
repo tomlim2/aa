@@ -91,30 +91,13 @@ function initMyBookmarklet(){
             var yAxis = e.pageY;
             $('body').css({
               "transform": "rotate("+ yAxis/10 + "deg)"
-              + "scale("+ 1 + xAxis/1000 + ")",
+              + "scale("+ 1 + xAxis/10000 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
 
 
           });
-          //
-          // $(document).mousemove(function(e){
-          //   var xAxis = e.pageX;
-          //   var yAxis = e.pageY;
-          //   $('.header__nav__lower').css({
-          //     "transform": "rotate("+ xAxis + "deg)"
-          //     + "scale("+ xAxis/100 + ")",
-          //     "background":"red",
-          //     "color": "lightgoldenrodyellow"
-          //   });
-          //
-          //   $('.banner-tray').css({
-          //     "transform": "rotate("+ yAxis + "deg)"
-          //     + "scale("+ xAxis/100 + ")",
-          //     "background":"yellow"
-          //   });
-          //
-          // });
+
 
 
             $("body").css({
@@ -128,7 +111,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               'top': '1000px'
-            },10000);
+            },8000);
 
 
             //
