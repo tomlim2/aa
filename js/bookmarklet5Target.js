@@ -78,7 +78,8 @@ function initMyBookmarklet(){
                 if( scrollPX > start1 ) {
                     $("#exercises").css({
                       "transform": "rotate("+ Math.min(scrollPX, 720) + "deg)",
-                      "left": Math.min(scrollPX*4, 380) + "px"
+                      "left": Math.min(scrollPX*4, 380) + "px",
+                      "filter":"hue-rotate("+ scrollPX +"deg)"
                     });
                     $("#projects").css({
                       "transform": "translateY("+ Math.max(-scrollPX, -600) + "px)",

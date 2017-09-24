@@ -45,7 +45,8 @@ function initMyBookmarklet(){
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 100) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
-                    "background":"yellow"
+                    "background":"yellow",
+                    "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
                   $('.header__nav__lower').css({
