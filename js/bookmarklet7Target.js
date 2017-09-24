@@ -123,7 +123,7 @@ function initMyBookmarklet(){
 
             $('.home__carousel-stage').animate({
               'top': '10000px'
-            },800);
+            },80000);
 
 
 
