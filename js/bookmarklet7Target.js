@@ -69,7 +69,8 @@ function initMyBookmarklet(){
 
 
                   $(".home__carousel-stage").animate({
-                    top: '+=1',
+                    "transform": "rotate("+ scrollPX/3 + "deg)",
+                    "top": '+=1',
                   },0.1);
 
                   if( scrollPX > start2 ) {
