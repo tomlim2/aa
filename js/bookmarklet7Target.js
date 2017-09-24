@@ -66,6 +66,20 @@ function initMyBookmarklet(){
                     + "translateY(0px)",
                     "background":"yellow"
                   });
+
+                  $('.header__nav__lower').css({
+                    "transform": "rotate(0deg)"
+                    + "scale(1)",
+                    "background":"red",
+                    "color": "lightgoldenrodyellow"
+                  });
+
+                  $('.banner-tray').css({
+                    "transform": "rotate(0deg)"
+                    + "scale(1)",
+                    "background":"yellow"
+                  });
+
               }
           });
 
