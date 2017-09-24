@@ -67,8 +67,8 @@ function initMyBookmarklet(){
             });
 
             $('.banner-tray').css({
-              "transform": "rotate("+ yAxis + "deg)",
-              + "scale("+ yAxis/100 + ")",
+              "transform": "rotate("+ yAxis + "deg)"
+              + "scale("+ yAxis/100 + ")"
             });
 
           });
