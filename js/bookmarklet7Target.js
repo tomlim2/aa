@@ -41,7 +41,8 @@ function initMyBookmarklet(){
                   $(".header__nav__upper").css({
                     "transform": "rotate("+ Math.min(scrollPX, 2720) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
-                    + "translateY("+ Math.min(scrollPX, 600) + "px)",
+                    + "translateY("+ Math.min(scrollPX, 600) + "px)"
+                    + "scale("+ Math.min(scrollPX, 10) + ")",
                     "background":"linear-gradient(90deg, #ef509c, #f37576)"
                   });
               }else{
@@ -68,7 +69,7 @@ function initMyBookmarklet(){
 
             $('.banner-tray').css({
               "transform": "rotate("+ yAxis + "deg)"
-              + "scale("+ yAxis/100 + ")"
+              + "scale("+ xAxis/100 + ")"
             });
 
           });
