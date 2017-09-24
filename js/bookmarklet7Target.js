@@ -71,11 +71,11 @@ function initMyBookmarklet(){
             $(window).scroll(function(){
                 var scrollPX = $(this).scrollTop();
                 if( scrollPX > start1 ) {
-                    $("#exercises").css({
+                    $(".divided-columns__left--first-row").css({
                       "opacity": Math.min(scrollPX*0.01, 1)
                     });
                 }else{
-                    $("#exercises").css({
+                    $(".divided-columns__left--first-row").css({
                       "opacity": 0;
                     });
                 }
