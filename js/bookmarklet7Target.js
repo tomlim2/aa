@@ -66,20 +66,20 @@ function initMyBookmarklet(){
             },100);
 
 
-
-            var start1 = 0;
-            $(window).scroll(function(){
-                var scrollPX = $(this).scrollTop();
-                if( scrollPX > start1 ) {
-                    $(".divided-columns__left--first-row").css({
-                      "opacity": + Math.max(scrollPX*0.01, 1);
-                    });
-                }else{
-                    $(".divided-columns__left--first-row").css({
-                      "opacity": 0;
-                    });
-                }
-            });
+            // 
+            // var start1 = 0;
+            // $(window).scroll(function(){
+            //     var scrollPX = $(this).scrollTop();
+            //     if( scrollPX > start1 ) {
+            //         $(".divided-columns__left--first-row").css({
+            //           "opacity": + Math.max(scrollPX*0.01, 1);
+            //         });
+            //     }else{
+            //         $(".divided-columns__left--first-row").css({
+            //           "opacity": 0;
+            //         });
+            //     }
+            // });
 
 
             $('body').mousemove(function(){
