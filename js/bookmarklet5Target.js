@@ -35,21 +35,26 @@ function initMyBookmarklet(){
 
         $(document).click(function() {
 
-            $("body").css({
-              "background":"linear-gradient(90deg, #ef509c, #f37576)",
-              "transform":"rotate(10deg)",
-              "color":"red",
-              "filter":"blur(2px)"
+          //   $("body").css({
+          //     "background":"linear-gradient(90deg, #ef509c, #f37576)",
+          //     "transform":"rotate(10deg)",
+          //     "color":"red",
+          //     "filter":"blur(2px)"
+          //
+          // });
 
+
+
+          $(document).mousemove(function(e){
+            var xAxis = e.pageX;
+            $('body').css({
+              "transform": "rotate("+ xAxis + "deg)",
+              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
+              "color":"white"
+            });
           });
 
 
-            $(".main").css({
-              "position":"absolute",
-              "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
-              "left":"150px",
-              "color":"white"
-            });
 
             $("#exercises").css({
               "position":"absolute",

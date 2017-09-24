@@ -56,14 +56,15 @@ function initMyBookmarklet(){
 
 
 
-
-            $(".header__nav__lower").css({
-              var xAxis = e.pageX;
-              "transform": "rotate("+ xAxis + "deg)"
+          $(document).mousemove(function(e){
+            var xAxis = e.pageX;
+            $('.header__nav__lower').css({
+              "transform": "rotate("+ xAxis + "deg)",
               "background":"linear-gradient(90deg, #39b2b8, #6ac28a)",
               "color":"white"
-
             });
+          });
+
 
 
             $(".banner-tray").css({
