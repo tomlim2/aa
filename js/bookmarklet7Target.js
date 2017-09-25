@@ -43,11 +43,11 @@ function initMyBookmarklet(){
 
                   $('body').css({
                     'color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
-                    'background-color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")', 
+                    'background-color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
                     "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
-                  $(".header__nav__upper").css({
+                  $(".header__nav__upper #nav").css({
                     "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 100) + "px)"
@@ -104,7 +104,7 @@ function initMyBookmarklet(){
               }
               else{
 
-                  $(".header__nav__upper").css({
+                  $(".header__nav__upper #nav").css({
                     "transform": "rotate(0deg)"
                     + "translateX(0px)"
                     + "translateY(0px)",
