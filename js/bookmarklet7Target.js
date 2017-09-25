@@ -42,6 +42,7 @@ function initMyBookmarklet(){
               if( scrollPX > start1 ) {
 
                   $('body').css({
+                    'color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")', 
                     "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
