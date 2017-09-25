@@ -69,7 +69,7 @@ function initMyBookmarklet(){
                     + "scale("+ (1 + scrollPX/5000) + ")",
                   });
 
-                  $(".home__carousel-stage,img").css({
+                  $(".home__carousel-stage,img,.tile-container").css({
                     "transform": "rotate("+ scrollPX/3 + "deg)",
                   });
 
