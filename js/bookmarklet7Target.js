@@ -41,7 +41,7 @@ function initMyBookmarklet(){
               var scrollPX = $(this).scrollTop();
               if( scrollPX > start1 ) {
 
-                  $('body').css({
+                  $('body,h1,h2,h3').css({
                     'color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
                     'background-color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
                     "filter":"hue-rotate("+ scrollPX +"deg)"
@@ -132,7 +132,7 @@ function initMyBookmarklet(){
           $(document).mousemove(function(e){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
-            $('body').css({
+            $('body,#main,#body').css({
               "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
               "background-color" : "rgb(" + xAxis/3 + "," + (xAxis*yAxis)/10 + "," + yAxis/3 + ")",
             });
