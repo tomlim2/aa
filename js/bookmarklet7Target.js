@@ -35,11 +35,7 @@ function initMyBookmarklet(){
 
         $(document).ready(function() {
 
-          $(*).mouseenter(function(){
-            $(this).css({
-              "color":'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")';,
-            });
-          });
+
 
           var start1 = 0;
           var start2 = 200;
