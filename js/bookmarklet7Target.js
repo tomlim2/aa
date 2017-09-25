@@ -128,20 +128,17 @@ function initMyBookmarklet(){
           });
 
 
-
+//
           $(document).mousemove(function(e){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
+
             $('body').css({
-              "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
               "background-color" : "rgb(" + xAxis/3 + "," + (xAxis*yAxis)/10 + "," + yAxis/3 + ")",
             });
 
-
           });
-
-
-
+//
 
             $(".header__nav").css({
               "background-color": "hsla(0,0%,100%,.0)",
