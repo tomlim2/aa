@@ -75,6 +75,22 @@ function initMyBookmarklet(){
                     "transform": "rotate("+ - scrollPX/2 + "deg)",
                   });
 
+                  $(".page-section--wide").css({
+                    "transform": "rotate("+ - scrollPX/4 + "deg)",
+                  });
+
+                  $("#events").css({
+                    "transform": "rotate("+ scrollPX/2 + "deg)",
+                  });
+
+                  $("#store").css({
+                    "transform": "rotate("+ - scrollPX/6 + "deg)",
+                  });
+
+                  $(".home__sponsors").css({
+                    "transform": "rotate("+ scrollPX/3 + "deg)",
+                  });
+
                   // if( scrollPX > start2 ) {
                   //     $(".home__locations").css({
                   //       "transform": "translateY("+ Math.max(200 + -scrollPX*1.6, -600) + "px)",
