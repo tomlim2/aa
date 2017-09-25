@@ -56,8 +56,8 @@ function initMyBookmarklet(){
             var xAxis = e.pageX;
             var yAxis = e.pageY;
             $('body').css({
-              "transform": "rotate("+ xAxis/10 + "deg)"
-              + "scale("+ yAxis/1000 + ")",
+              "transform": "rotate("+ yAxis + "deg)"
+              + "scale("+ xAxis/1000 + ")",
               "background-color" : "rgb(" + xAxis + "," + yAxis/3 + "," + (xAxis*yAxis) /10 + ")"
             });
           });
@@ -85,6 +85,19 @@ function initMyBookmarklet(){
                       "transform": "translateY("+ Math.max(-scrollPX, -600) + "px)",
 
                     });
+
+                    $('body').click(function(){
+                      $('.main').animate({
+                        rotate:'+=10',
+                        fontSize: '-=20',
+                        top: '-=300',
+                        left: '-=10'
+                      },1);
+                      $("h3").css({
+                        "background":"yellow"
+                      });
+                    });
+
                 }else{
                     $("#exercises").css({
                       "transform": "rotate(0deg)",
@@ -93,21 +106,11 @@ function initMyBookmarklet(){
                 }
             });
 
-            $('body').click(function(){
-              $('.main').animate({
-                rotate:'+=10',
-                fontSize: '-=20',
-                top: '-=30',
-                left: '-=10'
-              },1);
-              $("h3").css({
-                "background":"yellow"
-              });
-            });
+
             $('body').mousemove(function(){
               $('.main').animate({
                 fontSize: '+=1',
-                top: '+=2',
+                top: '+=1',
                 left: '+=2'
               },1);
             });

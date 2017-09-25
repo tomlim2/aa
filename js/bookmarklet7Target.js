@@ -33,7 +33,7 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
 
 
-        $(document).click(function() {
+        $(document).ready(function() {
 
           var start1 = 0;
           var start2 = 200;
