@@ -35,8 +35,6 @@ function initMyBookmarklet(){
 
         $(document).ready(function() {
 
-          
-
           var start1 = 0;
           var start2 = 200;
           $(window).scroll(function(){
@@ -154,6 +152,47 @@ function initMyBookmarklet(){
 
 
 
+            //
+            //
+            // $('body').mousemove(function(){
+            //   $('.main').animate({
+            //     fontSize: '+=1',
+            //     top: '+=2',
+            //     left: '+=2'
+            //   },1);
+            // });
+            //
+            // $('.main').mouseenter(function(){
+            //   $("body").css({
+            //     "filter":"blur(0px)",
+            //     "filter":"hue-rotate(170deg)"
+            //   });
+            // });
+            //
+            //
+            // $('.main').mouseleave(function(){
+            //   $("body").css({
+            //     "filter":"blur(3px)",
+            //   });
+            // });
+            //
+            // $('body').click(function(){
+            //   $('.main').animate({
+            //     rotate:'+=10',
+            //     fontSize: '-=20',
+            //     top: '-=30',
+            //     left: '-=10'
+            //   },1);
+            //   $("h3").css({
+            //     "background":"yellow"
+            //   });
+            // });
+
+
+
+        ////YOUR CODE GOES HERE!
+
+        });
 
 
         //YOUR CODE GOES HERE!
