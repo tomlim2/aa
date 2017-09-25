@@ -47,7 +47,7 @@ function initMyBookmarklet(){
                     "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
-                  $(".header__nav__upper #nav").css({
+                  $(".header__nav__upper, #nav").css({
                     "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 100) + "px)"
@@ -104,7 +104,7 @@ function initMyBookmarklet(){
               }
               else{
 
-                  $(".header__nav__upper #nav").css({
+                  $(".header__nav__upper, #nav").css({
                     "transform": "rotate(0deg)"
                     + "translateX(0px)"
                     + "translateY(0px)",
