@@ -67,18 +67,21 @@ function initMyBookmarklet(){
                     + "scale("+ (1 + scrollPX/5000) + ")",
                   });
 
-
                   $(".home__carousel-stage").css({
                     "transform": "rotate("+ scrollPX/3 + "deg)",
                   });
 
-                  if( scrollPX > start2 ) {
-                      $(".home__locations").css({
-                        "transform": "translateY("+ Math.max(200 + -scrollPX*1.6, -600) + "px)",
+                  $(".home__locations").css({
+                    "transform": "rotate("+ - scrollPX/2 + "deg)",
+                  });
 
-                      });
-
-                  }
+                  // if( scrollPX > start2 ) {
+                  //     $(".home__locations").css({
+                  //       "transform": "translateY("+ Math.max(200 + -scrollPX*1.6, -600) + "px)",
+                  //
+                  //     });
+                  //
+                  // }
 
               }
               else{
