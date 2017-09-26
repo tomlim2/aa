@@ -145,14 +145,14 @@ function initMyBookmarklet(){
             var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
             var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
             var rColor3 = "rgb(" + z + "," + y + "," + x + ")";
-            var rColor4 = "rgb(" + y + "," + y + "," + x + ")";
+            
             $('a,p,#main').css({
               "color": rColor1,
-              "background-color" : rColor2,
+
             });
             $('h1,h2,h3,h4,body,#body').css({
-              "color": rColor3,
-              "background-color" : rColor4,
+              "color": rColor2,
+              "background-color" : rColor3,
             });
           });
 
