@@ -144,7 +144,7 @@ function initMyBookmarklet(){
             var z = Math.floor(Math.random() * 256);
             var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
             var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
-            $('body,#main,#body').css({
+            $('h1,h2,h3,h4,a,p,body,#main,#body').css({
               "color": rColor1,
               "background-color" : rColor2,
             });
