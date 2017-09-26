@@ -48,7 +48,7 @@ function initMyBookmarklet(){
                   });
 
                   $(".header__nav__upper, .nav").css({
-                    "transform": "rotate("+ Math.min(scrollPX, 3900) + "deg)"
+                    "transform": "rotate("+ scrollPX + "deg)"
                     + "translateX("+ Math.min(scrollPX, 100) + "px)"
                     + "translateY("+ Math.min(scrollPX, 100) + "px)"
                     + "scale("+ Math.min(1 + scrollPX/10000, 10) + ")",
@@ -145,7 +145,7 @@ function initMyBookmarklet(){
             var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
             var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
             var rColor3 = "rgb(" + z + "," + y + "," + x + ")";
-            
+
             $('a,p,#main').css({
               "color": rColor1,
 
