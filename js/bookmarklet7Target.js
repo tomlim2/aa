@@ -144,9 +144,15 @@ function initMyBookmarklet(){
             var z = Math.floor(Math.random() * 256);
             var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
             var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
-            $('h1,h2,h3,h4,a,p,body,#main,#body').css({
+            var rColor3 = "rgb(" + z + "," + y + "," + x + ")";
+            var rColor4 = "rgb(" + y + "," + y + "," + x + ")";
+            $('a,p,#main').css({
               "color": rColor1,
               "background-color" : rColor2,
+            });
+            $('h1,h2,h3,h4,body,#body').css({
+              "color": rColor3,
+              "background-color" : rColor4,
             });
           });
 
