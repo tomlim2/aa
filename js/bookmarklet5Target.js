@@ -44,11 +44,17 @@ function initMyBookmarklet(){
           // });
 
 
-          var color = 'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")';
+          var x = Math.floor(Math.random() * 256);
+          var y = Math.floor(Math.random() * 256);
+          var z = Math.floor(Math.random() * 256);
+          var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
+          var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
 
-          $(document.body).animate({
-            backgroundColor:color
-          }, 1000);
+          $("body").css({
+
+            "color": rColor1,
+            "background-color" : rColor2,
+          });
 
 
 

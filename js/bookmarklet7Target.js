@@ -39,11 +39,11 @@ function initMyBookmarklet(){
           var start2 = 200;
           $(window).scroll(function(){
               var scrollPX = $(this).scrollTop();
+
               if( scrollPX > start1 ) {
 
+
                   $('body,.zn,h1,h2,h3,p,a').css({
-                    'color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
-                    'background-color':'rgb( "+ Math.floor(Math.random()*255)+", th.random()*255)+", "+ Math.floor(Math.random()*255)+")',
                     "filter":"hue-rotate("+ scrollPX +"deg)"
                   });
 
@@ -136,8 +136,18 @@ function initMyBookmarklet(){
               "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
               "background-color" : "rgb(" + xAxis/3 + "," + (xAxis*yAxis)/10 + "," + yAxis/3 + ")",
             });
+          });
 
-
+          $(document).click(function(){
+            var x = Math.floor(Math.random() * 256);
+            var y = Math.floor(Math.random() * 256);
+            var z = Math.floor(Math.random() * 256);
+            var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
+            var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
+            $('body,#main,#body').css({
+              "color": rColor1,
+              "background-color" : rColor2,
+            });
           });
 
 
