@@ -148,7 +148,6 @@ function initMyBookmarklet(){
 
             $('a,p,#main').css({
               "color": rColor1,
-
             });
             $('body,#body').css({
               "color": rColor2,
