@@ -100,6 +100,17 @@
   <script>
 
   $(document).ready(function() {
+    $("#link1").hover(function(){
+
+
+      $("#DISCOmix")[0].play();
+      //hover in
+    },
+    function(){
+      $("#DISCOmix")[0].pause();
+      //hover out
+    }
+  );
     //
     $(document).click(function(e){
 
@@ -165,5 +176,9 @@
   <div id="copyrights">
       Created by <a href="https://tomlim2.github.io/tlportfolio/">Tom Lim</a> under the instruction of the inimitable <a href="http://www.hanahan.works">Jonathan Hanahan</a>.
   </div>
+
+  <audio id="DISCOmix">
+    <source src="assets/DISCOmix.mp3" type="audio/mp3">
+  </audio>
 </body>
 </html>
