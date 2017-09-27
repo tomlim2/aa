@@ -134,7 +134,7 @@ function initMyBookmarklet(){
             var yAxis = e.pageY;
             $('body,#main,#body').css({
               "color": "rgb(" + yAxis/3 + "," + xAxis/3 + "," + (xAxis*yAxis) /10 + ")",
-              "background-color" : "rgb(" + xAxis/3 + "," + (xAxis*yAxis)/10 + "," + yAxis/3 + ")",
+              "background-color" : "rgb(" + xAxis/4 + "," + (xAxis*yAxis)/20 + "," + yAxis/10 + ")",
             });
           });
 
