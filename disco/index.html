@@ -50,14 +50,15 @@
       top: 50%;
       left: 50%;
       margin-left: -400px;
-      margin-top: -130px;
+      margin-top: -100px;
       color: red;
     }
 
-    h1 {
+    #link1 {
       font-weight: 900;
       font-size: 4.2em;
       color: #096e78;
+      margin-bottom: 0.4em;
     }
 
     #copyrights{
@@ -74,6 +75,7 @@
     a{
         font-weight: 600;
         color: #15a198;
+
         text-decoration: none;
     }
     a:hover{
@@ -86,18 +88,27 @@
 
   $(document).ready(function() {
     //
-    $(document).mousemove(function(e){
-      var xAxis = e.pageX;
-      var yAxis = e.pageY;
+    $(document).click(function(e){
+
       var x = Math.floor(Math.random() * 256);
       var y = Math.floor(Math.random() * 256);
       var z = Math.floor(Math.random() * 256);
       var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
       var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
       $('.backgoundbox').css({
-        "filter":"hue-rotate("+ (xAxis*yAxis)/1000 +"deg)",
+
         "color": rColor1,
         "background-color" : rColor2,
+
+      });
+    });
+    $(document).mousemove(function(e){
+      var xAxis = e.pageX;
+      var yAxis = e.pageY;
+
+      $('.backgoundbox').css({
+        "filter":"hue-rotate("+ (xAxis*yAxis)/1000 +"deg)",
+
 
       });
     });
@@ -116,15 +127,14 @@
   <div class="backgoundbox">
     <div class="main">
       <div class="textbox">
-        <h1>DISCO TIME</h1>
           Disco with website!!
           <br>
-          Drag the button below to your bookmarks bar
-          <br>
-          <a href="javascript:(function(){     document.body.appendChild(document.createElement('script')).src='https://tomlim2.github.io/aa/js/bookmarklet7Target.js'; })();">
-            Disco Time
+          Drag the letter below to your bookmarks bar
+          <br>-<br>
+          <a id="link1"href="javascript:(function(){     document.body.appendChild(document.createElement('script')).src='https://tomlim2.github.io/aa/js/bookmarklet7Target.js'; })();">
+            DISCO TIME
           </a>
-        <br>
+        <br>-<br>
 
           This bookmarklet is specialized on <a href="https://www.moma.org/">MOMA</a>
 

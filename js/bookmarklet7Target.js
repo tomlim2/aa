@@ -150,9 +150,11 @@ function initMyBookmarklet(){
               "color": rColor1,
 
             });
-            $('h1,h2,h3,h4,body,#body').css({
+            $('body,#body').css({
               "color": rColor2,
-              "background-color" : rColor3,
+            });
+            $('h1,h2,h3,h4').css({
+              "color": rColor3,
             });
           });
 
