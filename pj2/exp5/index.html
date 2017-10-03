@@ -3,19 +3,74 @@
 <html>
 
 <head>
-  <title>exp3</title>
+  <title>exp5</title>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+  <script>
+	$(document).ready(function(){
+
+    for(
+      var
+      i = 0;
+      //initionalize
+      i<=10;
+      //condition
+      i++
+      //finalize
+    ){
+
+    }
+
+
+    for(var i = 0; i<=10; i++){
+
+    }
+
+				var myAudio = ['a01', 'a02'];
+
+				$(".square").mouseenter(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+
+					// console.log(rand);
+				});
+
+        $(".square").mouseleave(function(){
+
+						$("#ctsound1")[0].pause();
+
+						$("#ctsound2")[0].pause();
+
+
+					// console.log(rand);
+				});
+
+
+
+
+	});
+
+	</script>
+
   <style>
   body{
-    background-color: #0f788d;
+    background-color: #f4c4de;
   }
   .square{
     position: absolute;
     width: 800px;
-    height: 800px;
+    height: 360px;
 
     left: 50%;
     top: 50%;
@@ -28,36 +83,32 @@
   }
   .circle{
     padding: 10px;
-    transition: all 1s linear;
+    transition: all 3s linear;
     margin: 0px;
 
   }
   .circle:hover {
-    padding: 12px;
 
 
-
+    transform: scale(1.12,1.12);
 
   }
 
     .circle1{
-      background: #d0e9ed;
+      background: #e0d9eb;
     }
     .circle1:hover {
-      background: #ebed8a;
-      transform: translate3d(-8px,-18px,-18px);
+      background: #e5429b;
+
     }
 
     .circle2{
-      background: #0f788d;
+      background: #7f7ab4;
     }
     .circle2:hover {
-      background: #847846;
-      transform: translate3d(8px,18px,18px);
+      background: #f4c4de;
+
     }
-
-
-    
   </style>
 </head>
 
@@ -101,6 +152,13 @@
       </div>
     </div>
   </div>
+
+  <audio id="ctsound1">
+    <source src="../assets/myS5.mp3" type="audio/mp3">
+  </audio>
+  <audio id="ctsound2">
+    <source src="../assets/myS6.mp3" type="audio/mp3">
+  </audio>
 
 
 </body>
