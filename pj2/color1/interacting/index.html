@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>color1</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <style>
+
+    body {
+      margin: 0px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .backgoundbox{
+      position: fixed;
+      background-image: url("pic1.jpg");
+      background-position: center;
+      background-size: contain;
+      /*animation: disco 2s linear infinite;*/
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+
+
+      animation: opacityprss 40s infinite linear;
+    }
+    .backgoundbox:hover{
+
+      animation-play-state: paused;
+    }
+    @keyframes opacityprss {
+      0%{
+        transform: rotate(0deg) scale(1);
+      }
+      50%{
+        transform: rotate(180deg) scale(2);
+      }
+
+      100%{
+        transform: rotate(360deg) scale(1);
+      }
+    }
+
+
+  </style>
+  <script>
+  //
+  // $(document).ready(function() {
+  //   var myAudio = ['a01', 'a02', 'a03'];
+  //
+  //
+  //
+  //   $(".backgoundbox").hover(function(){
+  //     var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+  //     if(rand == 'a01'){
+  //       $('#ctsound1')[0].currentTime = 0;
+  //       $("#ctsound1")[0].play();
+  //     }
+  //     if(rand == 'a02'){
+  //       $('#ctsound2')[0].currentTime = 0;
+  //       $("#ctsound2")[0].play();
+  //     }
+  //     if(rand == 'a03'){
+  //       $('#ctsound3')[0].currentTime = 0;
+  //       $("#ctsound3")[0].play();
+  //     }
+  //   });
+  //   //
+  //   $(document).click(function(e){
+  //
+  //     var x = Math.floor(Math.random() * 256);
+  //     var y = Math.floor(Math.random() * 256);
+  //     var z = Math.floor(Math.random() * 256);
+  //     var rColor1 = "rgb(" + x + "," + y + "," + z + ")";
+  //     var rColor2 = "rgb(" + y + "," + z + "," + x + ")";
+  //     $('.backgoundbox').css({
+  //
+  //       "color": rColor1,
+  //       "background-color" : rColor2,
+  //
+  //     });
+  //   });
+  //   $(document).mousemove(function(e){
+  //     var xAxis = e.pageX;
+  //     var yAxis = e.pageY;
+  //
+  //     $('.backgoundbox').css({
+  //       "filter":"hue-rotate("+ (xAxis*yAxis)/1000 +"deg)",
+  //
+  //
+  //     });
+  //   });
+  //
+  //
+  //
+  //
+  //   //
+  // });
+
+  </script>
+
+
+</head>
+
+<body>
+  <div class="backgoundbox">
+
+  </div>
+
+  <audio id="ctsound1">
+    <source src="assets/audio/a1.wav" type="audio/wav">
+  </audio>
+  <audio id="ctsound2">
+    <source src="assets/audio/a2.wav" type="audio/wav">
+  </audio>
+  <audio id="ctsound3">
+    <source src="assets/audio/a3.wav" type="audio/wav">
+  </audio>
+
+
+</body>
+</html>

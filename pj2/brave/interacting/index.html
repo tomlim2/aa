@@ -26,6 +26,26 @@
       width: 100%;
       height: 100%;
       margin: 0px;
+
+      animation: mvprss 6s infinite linear;
+    }
+    .backgoundbox:hover{
+      animation-play-state: paused;
+    }
+
+
+    @keyframes mvprss {
+      0%{
+
+        left: 0px;
+      }
+      50%{
+        transform: rotate(30deg);
+        left: 100px;
+      }
+      100%{
+        left: 0px;
+      }
     }
 
 
