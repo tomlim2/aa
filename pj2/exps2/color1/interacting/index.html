@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Brave</title>
+  <title>color1</title>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -21,37 +21,36 @@
       position: fixed;
       background-image: url("pic1.jpg");
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       /*animation: disco 2s linear infinite;*/
       width: 100%;
       height: 100%;
       margin: 0px;
 
-      animation: mvprss 6s infinite linear;
+
+      animation: opacityprss 50s infinite linear;
     }
     .backgoundbox:hover{
-      animation-play-state: paused;
+
+
     }
-
-
-    @keyframes mvprss {
+    @keyframes opacityprss {
       0%{
-
-        left: 0px;
+        transform: rotate(0deg) scale(1.1);
       }
       50%{
-        transform: rotate(30deg);
-        left: 100px;
+        transform: rotate(360deg) scale(4);
       }
+
       100%{
-        left: 0px;
+        transform: rotate(720deg) scale(1.1);
       }
     }
 
 
   </style>
   <script>
-
+  
   $(document).ready(function() {
     var myAudio = ['a01', 'a02', 'a03'];
 
@@ -103,7 +102,6 @@
 
     //
   });
-
   </script>
 
 
