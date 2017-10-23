@@ -1,0 +1,163 @@
+
+body{
+	/*background-color: #0f788d;*/
+	margin: 0px;
+}
+
+.bigcontainer{
+	position: fixed;
+
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+}
+
+.size1{
+	width: 120px;
+	height: 120px;
+	/*background-color: yellow;*/
+}
+.size2{
+	width: 70px;
+	height: 70px;
+	/*background-color: red;*/
+}
+.size3{
+	width: 50px;
+	height: 50px;
+	/*background-color: blue;*/
+}
+
+.flower{
+	position: absolute;
+}
+
+.flower:hover .shirts{
+	transform: scale(0.99);
+	transform-origin: center;
+}
+
+.shirts{
+
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0px;
+	top: 0px;
+
+	transform-origin: 5px 5px;
+
+	transition: all 0.6s linear;
+}
+
+/*e1*/
+.flower1{
+	left: 40%;
+	top: 16%;
+}
+
+
+.shirts1{
+	transform: rotate(-30deg);
+	padding: 0;
+	transform-origin: 10px 10px;
+}
+
+
+
+.flower2{
+	left: 20%;
+	top: 20%;
+}
+
+.shirts2{
+	transform: rotate(-30deg);
+	padding: 0;
+	transform-origin: 10px 10px;
+}
+
+
+.flower3{
+	left: 10%;
+	top: 10%;
+}
+
+
+.shirts3{
+	transform: rotate(-30deg);
+	padding: 0;
+	transform-origin: 10px 10px;
+}
+
+
+.flower4{
+	left: 29%;
+	top: 30%;
+}
+
+/*e2*/
+.flower5{
+	left: 51%;
+	top: 51%;
+}
+
+.flower6{
+	left: 70%;
+	top: 70%;
+}
+
+.flower7{
+	left: 80%;
+	top: 80%;
+}
+
+.flower8{
+	left: 88%;
+	top: 60%;
+}
+
+/*e3*/
+.flower9{
+	left: 68%;
+	top: 24%;
+}
+
+.flower10{
+	left: 54%;
+	top: 20%;
+}
+
+.flower11{
+	left: 80%;
+	top: 10%;
+}
+
+.flower12{
+	left: 88%;
+	top: 30%;
+}
+
+
+/*e3*/
+.flower13{
+	left: 30%;
+	top: 55%;
+}
+
+.flower14{
+	left: 20%;
+	top: 80%;
+}
+
+.flower15{
+	left: 4%;
+	top: 74%;
+}
+
+.flower16{
+	left: 41%;
+	top: 78%;
+}

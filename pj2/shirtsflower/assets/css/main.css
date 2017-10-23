@@ -1,0 +1,221 @@
+
+body{
+	/*background-color: #0f788d;*/
+	margin: 0px;
+}
+
+.bigcontainer{
+	position: fixed;
+
+
+
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+}
+
+/*lines*/
+
+.linesa{
+	position: absolute;
+	width: 90%;
+	height: 8px;
+	background: darkgreen;
+
+	filter: drop-shadow(1px 1px 1px gray);
+
+	z-index: 10;
+}
+
+
+.lines1{
+	left: 5%;
+	top: 8%;
+}
+
+.lines2{
+	left: 5%;
+	top: 87%;
+}
+
+
+
+/*defualt*/
+.square{
+	position: relative;
+
+
+
+	float: left;
+}
+
+.size1{
+	width: 60px;
+	height: 60px;
+
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	z-index: 9;
+}
+
+.size2{
+	width: 240px;
+	height: 240px;
+
+
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 30px;
+
+	z-index: 9;
+}
+
+.size3{
+	width: 120px;
+	height: 120px;
+
+	margin-left: 120px;
+	margin-top: 120px;
+
+	margin-bottom: 40px;
+
+	z-index: 11;
+}
+
+.circle{
+
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0px;
+	top: 0px;
+
+	transform-origin: 5px 5px;
+}
+
+
+/*//////////shirts parts*/
+
+
+
+/*white*/
+
+
+
+.circlea1{
+
+	transition: all 1s linear;
+	transform: rotate(-60deg);
+
+
+}
+
+.circlea1:hover{
+	transform: scale(0.98) rotate(360deg);
+	transform-origin: center;
+}
+
+
+
+
+
+/*dark black */
+
+
+.circlea2{
+
+	transition: all 1s linear;
+	transform: rotate(-60deg);
+
+	transform-origin: 10px 10px;
+
+
+
+}
+
+.circlea2:hover{
+	transform: scale(0.98) rotate(360deg);
+	transform-origin: center;
+}
+
+
+/*8 red */
+
+.circlea3{
+	transition: all 3s linear;
+	transform: scale(0.98) rotate(-53deg);
+
+	transform-origin: center;
+
+}
+
+.circlea3:hover{
+	transform: scale(0.8) rotate(360deg);
+	transform-origin: center;
+}
+
+
+
+.circlea4{
+	transition: all 1s linear;
+	transform:  rotate(-40deg) translate(10px,10px);
+
+	transform-origin: 25px 25px;
+
+
+}
+
+.circlea4:hover{
+	transform: scale(0.98) rotate(360deg);
+	transform-origin: center;
+}
+
+
+
+.circlea5{
+
+	transition: all 1s linear;
+	transform: rotate(-30deg);
+	padding: 0;
+	transform-origin: 10px 10px;
+
+
+
+}
+
+.circlea5:hover{
+	transform: scale(0.98) rotate(360deg);
+	transform-origin: center;
+}
+
+
+.circlea6{
+
+	transition: all 1s linear;
+	transform: rotate(-30deg);
+	padding: 0;
+	transform-origin: 10px 10px;
+
+
+
+}
+
+.circlea6:hover{
+	transform: scale(0.98);
+	transform-origin: center;
+}
+
+/*iframe*/
+
+iframe{
+	margin: 0px;
+	padding: 0px;
+
+}
