@@ -4,6 +4,16 @@ body{
 	margin: 0px;
 }
 
+.title{
+	position: absolute;
+	bottom: 1%;
+	right: 1%;
+
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 12em;
+}
+
 .bigcontainer{
 	position: fixed;
 
@@ -50,7 +60,7 @@ body{
 
 	transform-origin: 5px 5px;
 
-	transition: all 0.6s linear;
+	transition: all 1s linear;
 }
 
 /*e1*/
@@ -110,8 +120,8 @@ body{
 }
 
 .flower7{
-	left: 80%;
-	top: 80%;
+	left: 65%;
+	top: 60%;
 }
 
 .flower8{
@@ -160,4 +170,9 @@ body{
 .flower16{
 	left: 41%;
 	top: 78%;
+}
+
+.change{
+	transform: scale(0.98);
+	transform-origin: center;
 }
