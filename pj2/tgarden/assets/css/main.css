@@ -25,7 +25,7 @@ body{
 
 .bigcontainer{
 	/*background-color: #d3ebdd;*/
-	background: linear-gradient(#6bc28a, #3ab2b7);
+	background: linear-gradient(#4ae6d0, #d0f8af);
 	position: absolute;
 	width: 1400px;
 	height: 4000px;
@@ -39,7 +39,7 @@ body{
 }
 
 .bgchange{
-	filter: hue-rotate(60deg);
+	filter: hue-rotate(20deg);
 	/*background: linear-gradient(#6273b7, #61c6c5);*/
 }
 
