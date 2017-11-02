@@ -1,6 +1,6 @@
 
 body{
-	background: #302e2f;
+
 	margin: 0px;
 
 	font-family: 'Open Sans', sans-serif;
@@ -25,14 +25,11 @@ body{
 
 .bigcontainer{
 	/*background-color: #d3ebdd;*/
-	background: linear-gradient(#4ae6d0, #d0f8af);
+	/*background: linear-gradient(#4ae6d0, #d0f8af);*/
 	position: absolute;
-	width: 1400px;
-	height: 4000px;
 
-	overflow: hidden;
-	left: 50%;
-	margin-left: -700px;
+	/*overflow: hidden;*/
+	left: 0px;
 	top: 0;
 
 	transition: all	2s;
@@ -118,13 +115,21 @@ body{
 .flower1{
 	left: 460px;
 	top: 340px;
+}
 
+.shirtsf1{
+	transform: rotate(-10deg);
+	transform-origin: 10px 10px;
 }
 
 .flower2{
 	left: 900px;
 	top: 760px;
+}
 
+.shirtsf2{
+	transform: rotate(7.5deg);
+	transform-origin: 10px 10px;
 }
 
 
@@ -134,36 +139,58 @@ body{
 	top: 180px;
 }
 
+.shirtsf3{
+	transform: rotate(-6deg);
+	transform-origin: 10px 10px;
+}
+
 
 .flower4{
 	left: 560px;
 	top: 980px;
-
+}
+.shirtsf4{
+	transform: rotate(6deg);
+	transform-origin: 10px 10px;
 }
 
 /*e2*/
 .flower5{
 	left: 880px;
 	top: 1560px;
-
+}
+.shirtsf5{
+	transform: rotate(10deg);
+	transform-origin: 10px 10px;
 }
 
 .flower6{
 	left: 360px;
 	top: 1250px;
 }
+.shirtsf6{
+	transform: rotate(-7.5deg);
+	transform-origin: 10px 10px;
+}
 
 .flower7{
 	left: 400px;
 	top: 1780px;
-
+}
+.shirtsf7{
+	transform: rotate(6deg);
+	transform-origin: 10px 10px;
 }
 
 .flower8{
 	left: 1070px;
 	top: 1990px;
-
 }
+.shirtsf8{
+	transform: rotate(-6deg);
+	transform-origin: 10px 10px;
+}
+
 
 /*e3*/
 .flower9{
@@ -215,10 +242,18 @@ body{
 	left: 480px;
 	top: 3730px;
 }
+.shirtsf21{
+	transform: rotate(15deg);
+	transform-origin: 10px 10px;
+}
 
 .flower22{
 	left: 1120px;
 	top: 3180px;
+}
+.shirtsf22{
+	transform: rotate(30deg);
+	transform-origin: 10px 10px;
 }
 
 .flower23{
