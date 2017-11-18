@@ -28,7 +28,7 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-//color2
+//color
 
 var getRandomColor = function(){
 
@@ -37,7 +37,7 @@ var getRandomColor = function(){
   var randomColor = Math.floor(Math.random() * 5);
 
 
-  return color[randomColor];
+  return color2[randomColor];
 };
 
 //draw
@@ -61,14 +61,14 @@ function Ball (startX, startY, startVelX, startVelY) {
   };
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    if (distMouse(this) > 100) {
-      ctx.fillStyle = getRandomColor();
+    if (distMouse(this) > 120) {
+      ctx.fillStyle = "#2B879E";
       ctx.globalAlpha =  .2;
     } else {
-        ctx.fillStyle = getRandomColor();
-      ctx.globalAlpha =  .6;
+        ctx.fillStyle = "#F2E8C4";
+      ctx.globalAlpha =  0.8;
     }
-    ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
+    ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 30, 0, TAU, false);
     ctx.fill();
   }
 }
@@ -107,14 +107,14 @@ function draw() {
       var ball2 = balls[index2];
     var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
         if (dist < 100) {
-          if (distMouse(ball) > 100) {
-            ctx.strokeStyle = getRandomColor();
+          if (distMouse(ball) > 120) {
+            ctx.strokeStyle = "#2B879E";
             ctx.globalAlpha = .2;
           } else {
-            ctx.strokeStyle = getRandomColor();
-            ctx.globalAlpha =  .6;
+            ctx.strokeStyle = "#98D9B6";
+            ctx.globalAlpha =  0.8;
           }
-          ctx.lineWidth = "20px";
+          ctx.lineWidth = "10px";
           ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
           ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
         }
@@ -153,7 +153,7 @@ var playSong1 = function(){
 
 var playSound, dataArray;
 var midiBuffer = null;
-var audioURL = 'https://tomlim2.github.io/aa/pj3/assets/references/0-jsmith/js/Inkwell.mp3';
+var audioURL = 'https://tomlim2.github.io/aa/pj3/new2jsmith%20/js/HighScore.mp3';
 
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -174,5 +174,6 @@ var onKeyDown1 = function(e){
 
   }
 };
+
 
 window.addEventListener("keydown",onKeyDown1);
