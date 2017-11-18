@@ -46,6 +46,8 @@
     var pos = getRandomPosition();
     var width = getRandomNumber(100,300);
     var height = getRandomNumber(100,300);
+    var time = new Date();
+
 
     ctx.beginPath();
     ctx.fillStyle = getRandomColor();
@@ -58,6 +60,10 @@
     ctx.strokeStyle=getRandomColor();
 
     // ctx.rotate((Math.random()*Math.PI/180);
+
+
+    // ctx.translate(1, 1);
+
   };
 
   var drawRandomArc = function(){
@@ -77,12 +83,29 @@
 
   };
 
+  var drawRandomLine = function(){
+    var pos = getRandomPosition();
+    var radiusX = getRandomNumber(40,200);
+    var radiusY = getRandomNumber(40,200);
+
+    ctx.beginPath();
+
+    ctx.arc(pos.x, pos.y, radiusX, radiusY, 180, 0, 2 * Math.PI);
+
+
+    ctx.lineWidth=20;
+    ctx.stroke();
+    ctx.strokeStyle=getRandomColor();
+
+
+  };
+
   var drawRandomImage = function(){
     console.log('img');
   };
 
   var drawRandomThing = function(){
-    var rand = getRandomNumber(0, 1);
+    var rand = getRandomNumber(0, 2);
     switch( rand ){
       case 0: drawRandomRectangle();
               break;
