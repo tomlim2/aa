@@ -25,11 +25,11 @@ body{
 }
 
 div[class^="soundBox-"] {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
   background: yellow;
   position: absolute;
-  color: black;
+  color: yellow;
 
   font-weight: 400;
 }
