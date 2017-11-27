@@ -9,9 +9,9 @@ $(document).ready(function() {
 
 			if (canvas.getContext) {
 			var ctx = canvas.getContext("2d");
-					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 13, 10);
+					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 13, 10, getRandomPalette());
+          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 13, 10, getRandomPalette());
+          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 13, 10, getRandomPalette());
 				}
 			});
 
@@ -21,14 +21,15 @@ $(document).ready(function() {
       }
 
 
-      var getRandomColors = function(){
+      var getRandomColors = function(palette){
+        palette = palette || myPalette;
         var randomColors = Math.floor(Math.random() * 5);
-        return myPalette[randomColors];
+        return palette[randomColors];
       };
 
 
 
-var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchWidth ) {
+var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchWidth, palette ) {
   	var rand = Math.random,
   		newLength, newAngle, newDepth, maxBranch = 3,
   		endX, endY, maxAngle = 2 * Math.PI / 4,
@@ -47,10 +48,10 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 	ctx.lineTo(endX, endY);
 
 	if (depth <= 4) {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = getRandomColors(palette);
 	}
 	else {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = getRandomColors(palette);
 	}
 	ctx.stroke();
 
@@ -68,6 +69,6 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 	for ( var i = 0; i < subBranches; i++ ) {
 		newAngle = angle + rand() * maxAngle - maxAngle * 0.5;
 		newLength = length * (0.7 + rand() * 0.4);
-		recursiveTree(ctx, endX, endY, newLength, newAngle, newDepth, branchWidth);
+		recursiveTree(ctx, endX, endY, newLength, newAngle, newDepth, branchWidth, palette);
 	}
 };

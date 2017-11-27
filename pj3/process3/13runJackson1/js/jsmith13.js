@@ -1,5 +1,4 @@
 $(document).ready(function() {
-      window.myPalette = getRandomPalette();
       var $window = $(window);
       var $canvas = $('<canvas id="forest" width="' + $window.width() + '" height="' + $window.height() + '">Your browser doesn\'t support canvas. Boo-hiss.</canvas>');
       $('body').prepend($canvas);
@@ -9,30 +8,26 @@ $(document).ready(function() {
 
 			if (canvas.getContext) {
 			var ctx = canvas.getContext("2d");
-					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 13, 10);
+					recursiveTree(ctx, 100, 405, 120, -Math.PI / 3, 13, 10);
+          recursiveTree(ctx, 500, 405, 120, -Math.PI / 3, 13, 10);
+          recursiveTree(ctx, 900, 405, 120, -Math.PI / 3, 13, 10);
 				}
 			});
 
-      var getRandomPalette = function(){
-        var randPalette = palettes[Math.floor(Math.random() * palettes.length)];
-        return randPalette;
-      }
-
-
       var getRandomColors = function(){
+        var colors = ["#C7FCD7","#D9D5A7","#D9AB91","#E6867A","#ED4A6A"];
         var randomColors = Math.floor(Math.random() * 5);
-        return myPalette[randomColors];
+        return colors[randomColors];
       };
-
 
 
 var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchWidth ) {
   	var rand = Math.random,
   		newLength, newAngle, newDepth, maxBranch = 3,
-  		endX, endY, maxAngle = 2 * Math.PI / 4,
+  		endX, endY, maxAngle = 10 * Math.PI / 10,
   		subBranches;
+
+
 
 
 
@@ -46,7 +41,7 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 	ctx.lineWidth = branchWidth;
 	ctx.lineTo(endX, endY);
 
-	if (depth <= 4) {
+	if (depth <= 2) {
 		ctx.strokeStyle = getRandomColors();
 	}
 	else {
@@ -63,10 +58,10 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 
 	subBranches = (rand() * (maxBranch - 1)) + 1;
 
-	branchWidth *= 0.7;
+	branchWidth *= 0.8;
 
 	for ( var i = 0; i < subBranches; i++ ) {
-		newAngle = angle + rand() * maxAngle - maxAngle * 0.5;
+		newAngle = angle + rand() * maxAngle - maxAngle * 0.2;
 		newLength = length * (0.7 + rand() * 0.4);
 		recursiveTree(ctx, endX, endY, newLength, newAngle, newDepth, branchWidth);
 	}

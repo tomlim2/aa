@@ -1,30 +1,30 @@
 $(document).ready(function() {
-      window.myPalette = getRandomPalette();
       var $window = $(window);
       var $canvas = $('<canvas id="forest" width="' + $window.width() + '" height="' + $window.height() + '">Your browser doesn\'t support canvas. Boo-hiss.</canvas>');
       $('body').prepend($canvas);
-      $('body').css({"background-color": getRandomColors()});
+      // $('body').css({"background-color": getRandomColors()});
 			var canvas = document.getElementById('forest');
 
 
 			if (canvas.getContext) {
 			var ctx = canvas.getContext("2d");
-					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 13, 10);
-          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 13, 10);
+					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 12, 10);
+          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 12, 10);
+          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 12, 10);
 				}
 			});
 
-      var getRandomPalette = function(){
-        var randPalette = palettes[Math.floor(Math.random() * palettes.length)];
-        return randPalette;
-      }
 
 
-      var getRandomColors = function(){
-        var randomColors = Math.floor(Math.random() * 5);
-        return myPalette[randomColors];
-      };
+
+      // var getRandomColors = function(){
+      //   var palettes = ['p01'];
+      //   var randPalettes = palettes[Math.floor(Math.random() * palettes.length)];
+      //   var p01 = ["#E6EBA9","#ABBB9F","#6F8B94","#706482","#703D6F"]
+      //   var colors = ["#E6EBA9","#ABBB9F","#6F8B94","#706482","#703D6F"];
+      //   var randomColors = Math.floor(Math.random() * 5);
+      //   return randPalettes[randomColors];
+      // };
 
 
 
@@ -47,10 +47,10 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 	ctx.lineTo(endX, endY);
 
 	if (depth <= 4) {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = 'black';
 	}
 	else {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = 'black';
 	}
 	ctx.stroke();
 

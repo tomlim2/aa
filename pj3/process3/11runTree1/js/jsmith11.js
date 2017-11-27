@@ -1,9 +1,7 @@
 $(document).ready(function() {
-      window.myPalette = getRandomPalette();
       var $window = $(window);
       var $canvas = $('<canvas id="forest" width="' + $window.width() + '" height="' + $window.height() + '">Your browser doesn\'t support canvas. Boo-hiss.</canvas>');
       $('body').prepend($canvas);
-      $('body').css({"background-color": getRandomColors()});
 			var canvas = document.getElementById('forest');
 
 
@@ -15,18 +13,6 @@ $(document).ready(function() {
 				}
 			});
 
-      var getRandomPalette = function(){
-        var randPalette = palettes[Math.floor(Math.random() * palettes.length)];
-        return randPalette;
-      }
-
-
-      var getRandomColors = function(){
-        var randomColors = Math.floor(Math.random() * 5);
-        return myPalette[randomColors];
-      };
-
-
 
 var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchWidth ) {
   	var rand = Math.random,
@@ -34,7 +20,17 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
   		endX, endY, maxAngle = 2 * Math.PI / 4,
   		subBranches;
 
+    var getRandomColor = function(){
+      var color2 = ["#041122","#259073","#7FDA89","#C8E98E","#E6F99D"];
+      var randomColor = Math.floor(Math.random() * 5);
+      return color2[randomColor];
+    };
 
+    var getRandomColor2 = function(){
+      var color2 = ["#F06D61","#DA825F","#C4975C","#A8AB7B","#8CBF99"];
+      var randomColor = Math.floor(Math.random() * 5);
+      return color2[randomColor];
+    };
 
 
 
@@ -47,10 +43,10 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
 	ctx.lineTo(endX, endY);
 
 	if (depth <= 4) {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = getRandomColor();
 	}
 	else {
-		ctx.strokeStyle = getRandomColors();
+		ctx.strokeStyle = getRandomColor2();
 	}
 	ctx.stroke();
 
