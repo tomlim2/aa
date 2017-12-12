@@ -1,0 +1,49 @@
+body{
+  background: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+	padding: 0px;
+}
+
+.start{
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: fixed;
+  left: 20%;
+  top: 20%;
+  z-index: 1000;
+}
+
+.soundBoxContainer{
+ width: 1000px;
+ height: 480px;
+ position: absolute;
+ left: 0;
+ right: 0;
+}
+
+div[class^="soundBox-"] {
+  width: 160px;
+  height: 400px;
+  background: white;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  animation: fun 3s;
+
+}
+
+  @keyframes fun {
+    0%{
+      transform: scale(0,0);
+    }
+    60%{
+      transform: scale(1,0);
+    }
+    80%{
+      transform: scale(1,1);
+    }
+
+  }

@@ -3,15 +3,15 @@ $(document).ready(function() {
       var $window = $(window);
       var $canvas = $('<canvas id="forest" width="' + $window.width() + '" height="' + $window.height() + '">Your browser doesn\'t support canvas. Boo-hiss.</canvas>');
       $('body').prepend($canvas);
-      $('body').css({"background-color": getRandomColors()});
+      // $('body').css({"background-color": getRandomColors()});
 			var canvas = document.getElementById('forest');
 
 
 			if (canvas.getContext) {
 			var ctx = canvas.getContext("2d");
-					recursiveTree(ctx, 600, 705, 110, -Math.PI / 2, 13, 10, getRandomPalette());
-          recursiveTree(ctx, 100, 705, 80, -Math.PI / 2, 13, 10, getRandomPalette());
-          recursiveTree(ctx, 1000, 705, 80, -Math.PI / 2, 13, 10, getRandomPalette());
+					recursiveTree(ctx, 600, 705, 80, -Math.PI / 2, 12, 10, getRandomPalette());
+          recursiveTree(ctx, 800, 705, 100, -Math.PI / 2, 12, 10, getRandomPalette());
+          recursiveTree(ctx, 1100, 705, 80, -Math.PI / 2, 12, 10, getRandomPalette());
 				}
 			});
 

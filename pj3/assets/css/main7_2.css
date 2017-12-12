@@ -1,0 +1,90 @@
+body{
+  background: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+	padding: 0px;
+
+}
+
+.start{
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: fixed;
+  left: 20%;
+  top: 20%;
+  z-index: 1000;
+}
+
+.soundBoxContainer{
+  position: absolute;
+  /*background-color: #112637;*/
+  /*overflow: hidden;*/
+  width: 600px;
+  height: 600px;
+
+}
+.sBCPs1{
+  left: -90px;
+  top: -100px;
+  transform: scale(0.6);
+}
+
+.sBCPs2{
+  left: 360px;
+  top: 120px;
+  transform: scale(1);
+}
+
+.sBCPs3{
+  left: 960px;
+  top: -20px;
+  transform: scale(0.7);
+}
+
+.sBCPs4{
+  left: 1370px;
+  top: 280px;
+  transform: scale(0.5);
+}
+
+.treeBox{
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transform-origin: center;
+  top: -400px;
+}
+.tB1{
+
+  left: 1000px;
+
+}
+
+
+div[class^="soundBox-"] {
+  width: 160px;
+  height: 400px;
+  background: white;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  animation: fun 3s;
+
+}
+
+  @keyframes fun {
+    0%{
+      transform: scale(0,0);
+    }
+    60%{
+      transform: scale(1,0);
+    }
+    80%{
+      transform: scale(1,1);
+    }
+
+  }
