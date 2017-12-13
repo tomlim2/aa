@@ -23,7 +23,7 @@ body{
 }
 .container{
     width: 1280px;
-    height: 1661px;
+    height: 1631px;
     overflow: hidden;
     padding-top: 80px;
 }
@@ -39,13 +39,17 @@ body{
 .row2{
   margin-top: 30px;
   margin-bottom: 50px;
-  border-top: solid 1px white;
-  text-align: center;
+
+  text-align: left;
   font-size: 2em;
   color: white;
   width: 100%;
   padding-top: 20px;
-
+  padding-left: 66px;
+  font-weight: 600;
+}
+#date{
+  text-align: left;
 
 }
 .brainBox{
@@ -166,7 +170,7 @@ body{
   z-index: 10;
   background: black;
   text-align: center;
-  padding-top: 140px;
+  padding-top: 110px;
   transition: 0.2s all;
 }
 
@@ -191,7 +195,7 @@ body{
   #clickHere{
     margin-top: 1px;
     padding: 5px;
-    transition: 0.2s all;
+    transition: 0.4s all;
     cursor: pointer;
     width: 130px;
     font-size: 1.2em;
@@ -200,30 +204,58 @@ body{
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 
+    text-transform: uppercase;
+  }
+  #clickHere:hover{
+    background-color: white;
+    color: black;
   }
 
   .brainBox0{
     position: relative;
-    /*background-color: #112637;*/
-    /*overflow: hidden;*/
-    transform: scale(0.35);
-    top: -233px;
+
+    transform: scale(0.3);
+    top: -130px;
     left: 50%;
-    margin-top: 50px;
-    margin-left: -344px;
+
+    margin-left: -314px;
     margin-bottom: 12px;
     width: 200px;
     height: 200px;
   }
 form{
-  margin-top: 80px;
+  margin-top: 60px;
   z-index: 120;
 }
 #text1{
-  font-size: 3.2em;
+  font-size: 2.8em;
   text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#text2{
+  font-size: 2.0em;
+}
+#text3{
+  font-weight: 600;
 }
 
-#text2{
-  font-size: .8em;
+
+.iframBox{
+  position: absolute;
+  width: 1500px;
+  height: 1500px;
+  margin: 0;
+  padding: 0;
+  transform-origin: center;
+  top: 0px;
+}
+.iB1{
+  transform: rotate(90deg) rotateY(180deg);
+  left: 0px;
+
+}
+.iB2{
+  transform: rotate(-90deg);
+  left: 90px;
 }
